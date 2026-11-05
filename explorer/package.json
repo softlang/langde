@@ -1,0 +1,30 @@
+{
+  "name": "langde-explorer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "prepare:data": "python3 scripts/prepare_data.py",
+    "dev": "npm run prepare:data && vite",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run prepare:data && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test:data": "python3 -m unittest discover -s tests -v"
+  },
+  "dependencies": {
+    "cytoscape": "^3.30.0",
+    "n3": "^2.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@rdfjs/types": "^2.0.0",
+    "@types/cytoscape": "^3.21.0",
+    "@types/n3": "^1.26.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.0.0"
+  }
+}
