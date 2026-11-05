@@ -40,14 +40,14 @@ export default function GraphView({ model, focus, neighborhood, onSelect }: Prop
     const cy = cytoscape({
       container: container.current,
       elements,
-      minZoom: 0.08,
+      minZoom: 0.015,
       maxZoom: 3.5,
       wheelSensitivity: 0.2,
       layout: {
         name: 'concentric',
         animate: false,
         fit: true,
-        padding: 65,
+        padding: 38,
         minNodeSpacing: 80,
         concentric: (n) => n.id() === focus ? 2 : 1,
         levelWidth: () => 1,
@@ -117,7 +117,26 @@ export default function GraphView({ model, focus, neighborhood, onSelect }: Prop
 
     cy.on('tap', 'node', (evt) => onSelect(evt.target.id()));
     graph.current = cy;
+
+    // Cytoscape needs an up-to-date measured container size before fitting.
+    // Refit when the viewport or graph area changes (including responsive layouts).
+    let frame: number | null = null;
+    const fitToCanvas = () => {
+      if (frame !== null) cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        frame = null;
+        if (cy.destroyed()) return;
+        cy.resize();
+        if (cy.width() > 0 && cy.height() > 0) cy.fit(undefined, 32);
+      });
+    };
+    const observer = new ResizeObserver(fitToCanvas);
+    observer.observe(container.current);
+    fitToCanvas();
+
     return () => {
+      observer.disconnect();
+      if (frame !== null) cancelAnimationFrame(frame);
       cy.destroy();
       graph.current = null;
     };
@@ -127,9 +146,14 @@ export default function GraphView({ model, focus, neighborhood, onSelect }: Prop
     const cy = graph.current;
     if (!cy) return;
     cy.zoom({
-      level: Math.min(Math.max(cy.zoom() * factor, 0.08), 3.5),
+      level: Math.min(Math.max(cy.zoom() * factor, 0.015), 3.5),
       renderedPosition: { x: cy.width() / 2, y: cy.height() / 2 },
     });
+  }
+
+  function fitGraph() {
+    graph.current?.resize();
+    graph.current?.fit(undefined, 32);
   }
 
   return (
@@ -137,7 +161,7 @@ export default function GraphView({ model, focus, neighborhood, onSelect }: Prop
       <div className="graph-tools">
         <button title="Zoom in" aria-label="Zoom in" onClick={() => changeZoom(1.25)}>+</button>
         <button title="Zoom out" aria-label="Zoom out" onClick={() => changeZoom(1 / 1.25)}>−</button>
-        <button className="fit" title="Fit entire neighborhood" onClick={() => graph.current?.fit(undefined, 55)}>Fit</button>
+        <button className="fit" title="Fit entire neighborhood" onClick={fitGraph}>Fit</button>
       </div>
       <div className="graph-canvas" ref={container} role="img" aria-label={`Graph of ${model.label(focus)}, with ${neighborhood.nodes.length} nodes and ${neighborhood.edges.length} directed edges. Click a node to explore it.`} />
       <div className="graph-hint">Click a node to follow a connection · Drag to pan · Scroll to zoom</div>

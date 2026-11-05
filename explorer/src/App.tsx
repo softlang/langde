@@ -22,6 +22,7 @@ export default function App() {
   const [classQuery, setClassQuery] = useState('');
   const [instanceQuery, setInstanceQuery] = useState('');
   const [showTypeEdges, setShowTypeEdges] = useState(true);
+  const [detailsOpen, setDetailsOpen] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -42,6 +43,9 @@ export default function App() {
   const classes = useMemo(() => model?.getClasses() ?? [], [model]);
   const instances = useMemo(() => model && classIri ? model.getInstances(classIri) : [], [model, classIri]);
   const selectedClass = classes.find((entry) => entry.iri === classIri);
+  const filteredClasses = classes.filter((entry) => entry.iri === classIri || filterText(`${entry.label} ${entry.iri}`, classQuery));
+  const filteredInstances = instances.filter((entry) => entry.id === focus || filterText(`${entry.label} ${entry.id}`, instanceQuery));
+  const selectedInstanceValue = instances.some((entry) => entry.id === focus) ? (focus ?? '') : '';
   const neighborhood = useMemo(() => model && focus ? model.getNeighborhood(focus, showTypeEdges) : null, [model, focus, showTypeEdges]);
 
   const navigate = useCallback((id: string) => {
@@ -90,30 +94,37 @@ export default function App() {
         </div>
       </header>
       <div className="workspace">
-        <aside className="browser-panel">
+        <aside className="browser-panel" aria-label="Find a resource">
           <section className="browser-section classes-section">
             <div className="section-heading"><span className="step">01</span><div><h2>Choose a class</h2><p>From the T-box</p></div></div>
-            <label className="search"><SearchIcon/><input aria-label="Search classes" value={classQuery} onChange={(e) => setClassQuery(e.target.value)} placeholder="Search classes…" /></label>
-            <div className="selection-list class-list">
-              {classes.filter((entry) => filterText(`${entry.label} ${entry.iri}`, classQuery)).map((entry) => (
-                <button key={entry.iri} title={entry.iri} className={`selection-item ${classIri === entry.iri ? 'active' : ''}`} onClick={() => chooseClass(entry.iri)}>
-                  <span className="item-label">{entry.label}</span><span className="item-count">{entry.count}</span>
-                </button>
-              ))}
-            </div>
+            <label className="search"><SearchIcon/><input type="search" aria-label="Filter classes" value={classQuery} onChange={(e) => setClassQuery(e.target.value)} placeholder="Filter classes…" /></label>
+            <select
+              className="picker"
+              aria-label="Choose a class"
+              value={classIri ?? ''}
+              onChange={(e) => chooseClass(e.target.value)}
+            >
+              <option value="" disabled>Select a class…</option>
+              {filteredClasses.map((entry) => <option key={entry.iri} value={entry.iri}>{entry.label} ({entry.count})</option>)}
+            </select>
+            <p className="picker-note">{classes.length} named classes</p>
           </section>
           <section className="browser-section instances-section">
-            <div className="section-heading"><span className="step">02</span><div><h2>Choose an instance</h2><p>{selectedClass ? `${instances.length} instances of ${selectedClass.label}` : 'Select a class above'}</p></div></div>
-            <label className="search"><SearchIcon/><input aria-label="Search instances" value={instanceQuery} disabled={!classIri} onChange={(e) => setInstanceQuery(e.target.value)} placeholder="Filter instances…" /></label>
-            <div className="selection-list instance-list">
-              {instances.filter((item) => filterText(`${item.label} ${item.id}`, instanceQuery)).map((resource) => (
-                <button key={resource.id} title={resource.id} className={`selection-item ${focus === resource.id ? 'active' : ''}`} onClick={() => navigate(resource.id)}>
-                  <span className="item-label">{resource.label}</span><span className="item-chevron">›</span>
-                </button>
-              ))}
-              {instances.length === 0 ? <p className="empty-list">No asserted instances for this class.</p> : null}
-            </div>
+            <div className="section-heading"><span className="step">02</span><div><h2>Choose an instance</h2><p>{selectedClass ? `${instances.length} instances of ${selectedClass.label}` : 'Select a class first'}</p></div></div>
+            <label className="search"><SearchIcon/><input type="search" aria-label="Filter instances" value={instanceQuery} disabled={!classIri} onChange={(e) => setInstanceQuery(e.target.value)} placeholder="Filter instances…" /></label>
+            <select
+              className="picker"
+              aria-label="Choose an instance"
+              value={selectedInstanceValue}
+              disabled={!classIri || instances.length === 0}
+              onChange={(e) => { if (e.target.value) navigate(e.target.value); }}
+            >
+              <option value="">{instances.length ? 'Select an instance…' : 'No instances available'}</option>
+              {filteredInstances.map((item) => <option value={item.id} key={item.id}>{item.label}</option>)}
+            </select>
+            <p className="picker-note">{classIri ? 'Choose an instance to draw its neighborhood.' : 'Instances appear here after class selection.'}</p>
           </section>
+          <div className="browser-tip">Select a class, then an instance. Click any graph node to follow a relationship.</div>
         </aside>
         <main className="main-panel">
           <div className="graph-header">
@@ -123,6 +134,7 @@ export default function App() {
               <p>{neighborhood ? `${neighborhood.nodes.length} resources · ${neighborhood.edges.length} directed assertions` : 'Explore both incoming and outgoing relationships.'}</p>
             </div>
             <div className="graph-actions">
+              <button className="details-toggle" onClick={() => setDetailsOpen((value) => !value)} aria-expanded={detailsOpen} aria-controls="resource-details">{detailsOpen ? 'Hide details' : 'Details'}</button>
               <button className="back-button" onClick={goBack} disabled={history.length === 0} title="Navigate back">← Back</button>
               <label className="toggle"><input type="checkbox" checked={showTypeEdges} onChange={(e) => setShowTypeEdges(e.target.checked)} /><span>Show rdf:type</span></label>
             </div>
@@ -137,7 +149,7 @@ export default function App() {
             <span>Arrow direction follows RDF subject → object</span>
           </div>
         </main>
-        <ResourceDetails model={model} focus={focus} neighborhood={neighborhood} />
+        <ResourceDetails model={model} focus={focus} neighborhood={neighborhood} open={detailsOpen} onClose={() => setDetailsOpen(false)} />
       </div>
       <footer className="footer">
         <span>Read-only explorer · Explicit RDF assertions + named subclass membership · No OWL inference</span>

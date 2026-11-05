@@ -4,15 +4,20 @@ type Props = {
   model: OntologyModel;
   focus: string | null;
   neighborhood: Neighborhood | null;
+  open: boolean;
+  onClose: () => void;
 };
 
-export default function ResourceDetails({ model, focus, neighborhood }: Props) {
+export default function ResourceDetails({ model, focus, neighborhood, open, onClose }: Props) {
+  const panelClassName = `details-panel ${open ? 'open' : ''}`;
+  const closeButton = <button className="details-close" type="button" onClick={onClose} aria-label="Close details">×</button>;
   if (!focus || !neighborhood) {
-    return <aside className="details-panel"><h2>Resource details</h2><p className="muted">Select an instance to see its properties.</p></aside>;
+    return <aside id="resource-details" className={panelClassName}>{closeButton}<h2>Resource details</h2><p className="muted">Select an instance to see its properties.</p></aside>;
   }
   const resource = model.resource(focus);
   return (
-    <aside className="details-panel">
+    <aside id="resource-details" className={panelClassName}>
+      {closeButton}
       <div className="section-kicker">CURRENT RESOURCE</div>
       <h2 className="details-title">{resource.label}</h2>
       <div className="type-list">

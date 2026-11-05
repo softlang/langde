@@ -37,13 +37,27 @@ SPARQL service is required. The browser works with static, generated data.
 
 ## Use
 
-1. Search/select a named OWL/RDFS class on the left.
-2. Filter/select an instance. Instance lists contain direct `rdf:type` assertions
+1. Filter/select a named OWL/RDFS class in the compact class dropdown on the left.
+2. Immediately below it, filter/select an instance from the instance dropdown. Instance lists contain direct `rdf:type` assertions
    plus asserted instances of **named subclasses** (`rdfs:subClassOf`, transitive).
 3. The graph displays incoming and outgoing RDF triples whose ends are resources.
    Arrowheads point from RDF subject to object, and edges are labeled by predicate.
 4. Click any graph node to make it the new focus; **Back** returns to the previous focus.
 5. Literals are in the details sidebar rather than rendered as graph nodes.
+
+## Layout (v0.2)
+
+- The two searchable dropdowns sit together at the top of the navigation sidebar.
+- The app fills the browser viewport; the graph canvas takes the space remaining
+  after the header, controls, and footer. The whole page no longer requires
+  vertical scrolling for graph navigation.
+- **Fit** uses the current canvas dimensions. The graph also refits when the
+  canvas changes size, for example when resizing the browser window.
+- Details scroll independently from the graph. In narrower windows, open them
+  using the **Details** button; this avoids stacking a details panel below the graph.
+- Very dense neighborhoods may become small at Fit; zoom/pan still operate only
+  within the drawing canvas.
+
 
 All object-property / resource-to-resource assertions are shown, including `rdf:type`
 unless switched off in the UI. Anonymous RDF resources are navigable, but not shown
