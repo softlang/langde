@@ -1,0 +1,63 @@
+name: Deploy ontology explorer to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ontology/tbox.ttl'
+      - 'ontology/abox-2025-2026.ttl'
+      - 'explorer/**'
+      - '.github/workflows/deploy-explorer.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: explorer/package-lock.json
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: explorer/requirements.txt
+      - name: Install RDF tooling
+        run: python -m pip install -r explorer/requirements.txt
+      - name: Install frontend dependencies
+        working-directory: explorer
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm install; fi
+      - name: Test ontology preparation
+        working-directory: explorer
+        run: npm run test:data
+      - name: Build static website
+        working-directory: explorer
+        run: npm run build
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: explorer/dist
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v4
