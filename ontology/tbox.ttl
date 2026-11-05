@@ -1,0 +1,228 @@
+@prefix ld: <http://www.uni-koblenz.de/ontologies/langde#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.uni-koblenz.de/ontologies/langde> a owl:Ontology ;
+    rdfs:label "langde" ;
+    rdfs:comment "An experiment with a particular German language school design as a synthesized variation on https://wp.uni-koblenz.de/funkprojekt/",
+        "OWL vocabulary for fictional German-support courses. Admission, scheduling, and cross-resource integrity rules are validated with SHACL." .
+
+ld:StandardCourse a owl:Class ;
+    rdfs:label "StandardCourse" ;
+    rdfs:subClassOf ld:Course ;
+    owl:disjointWith ld:PreparatoryCourse .
+
+ld:absentStudent a owl:ObjectProperty ;
+    rdfs:domain ld:CourseSession ;
+    rdfs:range ld:Student .
+
+ld:belongsToGeneralSubject a owl:ObjectProperty ;
+    rdfs:domain ld:SpecificSubject ;
+    rdfs:range ld:GeneralSubject .
+
+ld:birthDate a owl:DatatypeProperty ;
+    rdfs:domain ld:Student ;
+    rdfs:range xsd:date .
+
+ld:cefrRank a owl:DatatypeProperty ;
+    rdfs:domain ld:CEFRLevel ;
+    rdfs:range xsd:integer .
+
+ld:courseId a owl:DatatypeProperty ;
+    rdfs:domain ld:Course ;
+    rdfs:range xsd:string .
+
+ld:endDateTime a owl:DatatypeProperty ;
+    rdfs:domain ld:CourseSession ;
+    rdfs:range xsd:dateTime .
+
+ld:firstName a owl:DatatypeProperty ;
+    rdfs:domain ld:Student ;
+    rdfs:range xsd:string .
+
+ld:gradeNumber a owl:DatatypeProperty ;
+    rdfs:domain ld:GradeLevel ;
+    rdfs:range xsd:integer .
+
+ld:hasLanguageProficiency a owl:ObjectProperty ;
+    rdfs:domain ld:Student ;
+    rdfs:range ld:LanguageProficiency .
+
+ld:hasSession a owl:ObjectProperty ;
+    rdfs:domain ld:Course ;
+    rdfs:range ld:CourseSession ;
+    owl:inverseOf ld:sessionOf .
+
+ld:hasStudent a owl:ObjectProperty ;
+    rdfs:domain ld:Course ;
+    rdfs:range ld:Student ;
+    owl:inverseOf ld:enrolledIn .
+
+ld:hasSubstituteTeacher a owl:ObjectProperty ;
+    rdfs:domain ld:CourseSession ;
+    rdfs:range ld:Teacher .
+
+ld:label a owl:DatatypeProperty ;
+    rdfs:domain ld:Course ;
+    rdfs:range xsd:string .
+
+ld:periodEnd a owl:DatatypeProperty ;
+    rdfs:domain ld:SchoolHolidayPeriod ;
+    rdfs:range xsd:date .
+
+ld:periodStart a owl:DatatypeProperty ;
+    rdfs:domain ld:SchoolHolidayPeriod ;
+    rdfs:range xsd:date .
+
+ld:requiredGermanRank a owl:DatatypeProperty ;
+    rdfs:domain ld:Course ;
+    rdfs:range xsd:integer .
+
+ld:schoolName a owl:DatatypeProperty ;
+    rdfs:domain ld:School ;
+    rdfs:range xsd:string .
+
+ld:schoolYearLabel a owl:DatatypeProperty ;
+    rdfs:domain ld:SchoolYear ;
+    rdfs:range xsd:string .
+
+ld:startDateTime a owl:DatatypeProperty ;
+    rdfs:domain ld:CourseSession ;
+    rdfs:range xsd:dateTime .
+
+ld:surname a owl:DatatypeProperty ;
+    rdfs:domain ld:Student ;
+    rdfs:range xsd:string .
+
+ld:PreparatoryCourse a owl:Class ;
+    rdfs:label "PreparatoryCourse" ;
+    rdfs:subClassOf ld:Course .
+
+ld:SchoolType a owl:Class ;
+    rdfs:label "SchoolType" .
+
+ld:attendsSchool a owl:ObjectProperty ;
+    rdfs:domain ld:Student ;
+    rdfs:range ld:School .
+
+ld:enrolledIn a owl:ObjectProperty ;
+    rdfs:domain ld:Student ;
+    rdfs:range ld:Course .
+
+ld:hasDefaultTeacher a owl:ObjectProperty ;
+    rdfs:domain ld:Course ;
+    rdfs:range ld:Teacher .
+
+ld:hasGeneralSubject a owl:ObjectProperty ;
+    rdfs:domain ld:Course ;
+    rdfs:range ld:GeneralSubject .
+
+ld:hasSchoolType a owl:ObjectProperty ;
+    rdfs:domain ld:School ;
+    rdfs:range ld:SchoolType .
+
+ld:hasSpecificSubject a owl:ObjectProperty ;
+    rdfs:domain ld:CourseSession ;
+    rdfs:range ld:SpecificSubject .
+
+ld:inGrade a owl:ObjectProperty ;
+    rdfs:domain ld:Student ;
+    rdfs:range ld:GradeLevel .
+
+ld:inSchoolYear a owl:ObjectProperty ;
+    rdfs:domain ld:Course ;
+    rdfs:range ld:SchoolYear .
+
+ld:proficiencyLanguage a owl:ObjectProperty ;
+    rdfs:domain ld:LanguageProficiency ;
+    rdfs:range ld:Language .
+
+ld:proficiencyLevel a owl:ObjectProperty ;
+    rdfs:domain ld:LanguageProficiency ;
+    rdfs:range ld:CEFRLevel .
+
+ld:CEFRLevel a owl:Class ;
+    rdfs:label "CEFRLevel" .
+
+ld:GeneralSubject a owl:Class ;
+    rdfs:label "GeneralSubject" .
+
+ld:GradeLevel a owl:Class ;
+    rdfs:label "GradeLevel" .
+
+ld:Language a owl:Class ;
+    rdfs:label "Language" .
+
+ld:SchoolHolidayPeriod a owl:Class ;
+    rdfs:label "SchoolHolidayPeriod" .
+
+ld:SchoolYear a owl:Class ;
+    rdfs:label "SchoolYear" .
+
+ld:SpecificSubject a owl:Class ;
+    rdfs:label "SpecificSubject" .
+
+ld:Teacher a owl:Class ;
+    rdfs:label "Teacher" .
+
+ld:hasNativeLanguage a owl:ObjectProperty ;
+    rdfs:domain ld:Student ;
+    rdfs:range ld:Language .
+
+ld:sessionOf a owl:ObjectProperty ;
+    rdfs:domain ld:CourseSession ;
+    rdfs:range ld:Course .
+
+ld:LanguageProficiency a owl:Class ;
+    rdfs:label "LanguageProficiency" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty ld:proficiencyLanguage ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty ld:proficiencyLevel ] .
+
+ld:School a owl:Class ;
+    rdfs:label "School" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty ld:hasSchoolType ] .
+
+ld:CourseSession a owl:Class ;
+    rdfs:label "CourseSession" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty ld:sessionOf ],
+        [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty ld:hasSpecificSubject ] .
+
+ld:Student a owl:Class ;
+    rdfs:label "Student" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty ld:inGrade ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty ld:attendsSchool ],
+        [ a owl:Class ;
+            owl:complementOf [ a owl:Restriction ;
+                    owl:hasValue ld:German ;
+                    owl:onProperty ld:hasNativeLanguage ] ],
+        [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty ld:hasNativeLanguage ] .
+
+ld:Course a owl:Class ;
+    rdfs:label "Course" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty ld:hasGeneralSubject ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty ld:hasDefaultTeacher ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty ld:inSchoolYear ] .
+

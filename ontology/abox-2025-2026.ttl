@@ -1,0 +1,3172 @@
+@prefix ld: <http://www.uni-koblenz.de/ontologies/langde#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ld:AutumnBreak a ld:SchoolHolidayPeriod ;
+    ld:periodEnd "2025-10-24"^^xsd:date ;
+    ld:periodStart "2025-10-13"^^xsd:date .
+
+ld:CEFR_C2 a ld:CEFRLevel ;
+    rdfs:label "C2" ;
+    ld:cefrRank 6 .
+
+ld:ChristmasBreak a ld:SchoolHolidayPeriod ;
+    ld:periodEnd "2026-01-07"^^xsd:date ;
+    ld:periodStart "2025-12-22"^^xsd:date .
+
+ld:EasterBreak a ld:SchoolHolidayPeriod ;
+    ld:periodEnd "2026-04-10"^^xsd:date ;
+    ld:periodStart "2026-03-30"^^xsd:date .
+
+ld:SummerBreak2026 a ld:SchoolHolidayPeriod ;
+    ld:periodEnd "2026-08-07"^^xsd:date ;
+    ld:periodStart "2026-06-29"^^xsd:date .
+
+ld:synthetic-2025-2026 a owl:Ontology ;
+    owl:imports <http://www.uni-koblenz.de/ontologies/langde> .
+
+ld:ComprehensiveSchool a ld:SchoolType ;
+    rdfs:label "Integrierte Gesamtschule" .
+
+ld:Proficiency001_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency001_Spanish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Spanish ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency002_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency002_Turkish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Turkish ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency003_Arabic a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Arabic ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency003_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency004_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency004_Russian a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Russian ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency005_English a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:English ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency005_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency005_Ukrainian a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Ukrainian ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency006_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency006_Polish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Polish ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency007_English a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:English ;
+    ld:proficiencyLevel ld:CEFR_A1 .
+
+ld:Proficiency007_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency008_French a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:French ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency008_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency009_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency009_Spanish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Spanish ;
+    ld:proficiencyLevel ld:CEFR_A1 .
+
+ld:Proficiency010_English a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:English ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency010_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency010_Turkish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Turkish ;
+    ld:proficiencyLevel ld:CEFR_A1 .
+
+ld:Proficiency011_Arabic a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Arabic ;
+    ld:proficiencyLevel ld:CEFR_A1 .
+
+ld:Proficiency011_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency012_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency012_Ukrainian a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Ukrainian ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency013_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency013_Polish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Polish ;
+    ld:proficiencyLevel ld:CEFR_A1 .
+
+ld:Proficiency014_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency014_Italian a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Italian ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency015_English a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:English ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency015_French a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:French ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency015_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency016_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency016_Spanish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Spanish ;
+    ld:proficiencyLevel ld:CEFR_A1 .
+
+ld:Proficiency017_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency017_Turkish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Turkish ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency018_Arabic a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Arabic ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency018_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency019_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency019_Russian a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Russian ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency020_English a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:English ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency020_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency020_Ukrainian a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Ukrainian ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency021_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency021_Polish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Polish ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency022_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency022_Italian a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Italian ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency023_French a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:French ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency023_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency024_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency024_Spanish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Spanish ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency025_English a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:English ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency025_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency025_Turkish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Turkish ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency026_Arabic a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Arabic ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency026_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency027_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency027_Russian a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Russian ;
+    ld:proficiencyLevel ld:CEFR_A1 .
+
+ld:Proficiency028_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency028_Polish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Polish ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency029_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency029_Italian a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Italian ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency030_English a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:English ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency030_French a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:French ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency030_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency031_French a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:French ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency031_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency032_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency032_Spanish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Spanish ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency033_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency033_Turkish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Turkish ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency034_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency034_Russian a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Russian ;
+    ld:proficiencyLevel ld:CEFR_A1 .
+
+ld:Proficiency035_English a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:English ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency035_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency035_Ukrainian a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Ukrainian ;
+    ld:proficiencyLevel ld:CEFR_A1 .
+
+ld:Proficiency036_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency036_Polish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Polish ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency037_English a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:English ;
+    ld:proficiencyLevel ld:CEFR_A1 .
+
+ld:Proficiency037_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency038_French a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:French ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency038_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency039_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency039_Spanish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Spanish ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency040_English a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:English ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency040_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency040_Turkish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Turkish ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency041_Arabic a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Arabic ;
+    ld:proficiencyLevel ld:CEFR_A1 .
+
+ld:Proficiency041_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency042_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency042_Ukrainian a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Ukrainian ;
+    ld:proficiencyLevel ld:CEFR_A1 .
+
+ld:Proficiency043_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency043_Polish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Polish ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency044_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency044_Italian a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Italian ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency045_English a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:English ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency045_French a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:French ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency045_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency046_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency046_Spanish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Spanish ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency047_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency047_Turkish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Turkish ;
+    ld:proficiencyLevel ld:CEFR_A1 .
+
+ld:Proficiency048_Arabic a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Arabic ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency048_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency049_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency049_Russian a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Russian ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency050_English a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:English ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:Proficiency050_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_B2 .
+
+ld:Proficiency050_Ukrainian a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Ukrainian ;
+    ld:proficiencyLevel ld:CEFR_A2 .
+
+ld:Proficiency051_German a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:German ;
+    ld:proficiencyLevel ld:CEFR_C1 .
+
+ld:Proficiency051_Polish a ld:LanguageProficiency ;
+    ld:proficiencyLanguage ld:Polish ;
+    ld:proficiencyLevel ld:CEFR_B1 .
+
+ld:RealschulePlus a ld:SchoolType ;
+    rdfs:label "Realschule plus" .
+
+ld:Session01_01 a ld:CourseSession ;
+    ld:endDateTime "2025-08-18T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2025-08-18T16:00:00"^^xsd:dateTime .
+
+ld:Session01_02 a ld:CourseSession ;
+    ld:endDateTime "2025-08-25T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:GaussianElimination ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2025-08-25T16:00:00"^^xsd:dateTime .
+
+ld:Session01_03 a ld:CourseSession ;
+    ld:absentStudent ld:Student006 ;
+    ld:endDateTime "2025-09-01T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2025-09-01T16:00:00"^^xsd:dateTime .
+
+ld:Session01_04 a ld:CourseSession ;
+    ld:endDateTime "2025-09-08T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Probability ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2025-09-08T16:00:00"^^xsd:dateTime .
+
+ld:Session01_05 a ld:CourseSession ;
+    ld:endDateTime "2025-09-15T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Equations ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2025-09-15T16:00:00"^^xsd:dateTime .
+
+ld:Session01_06 a ld:CourseSession ;
+    ld:endDateTime "2025-09-22T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Geometry ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2025-09-22T16:00:00"^^xsd:dateTime .
+
+ld:Session01_07 a ld:CourseSession ;
+    ld:endDateTime "2025-09-29T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2025-09-29T16:00:00"^^xsd:dateTime .
+
+ld:Session01_08 a ld:CourseSession ;
+    ld:endDateTime "2025-10-06T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:GaussianElimination ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2025-10-06T16:00:00"^^xsd:dateTime .
+
+ld:Session01_09 a ld:CourseSession ;
+    ld:endDateTime "2025-10-27T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2025-10-27T16:00:00"^^xsd:dateTime .
+
+ld:Session01_10 a ld:CourseSession ;
+    ld:endDateTime "2025-11-03T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Probability ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2025-11-03T16:00:00"^^xsd:dateTime .
+
+ld:Session01_11 a ld:CourseSession ;
+    ld:endDateTime "2025-11-10T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Equations ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2025-11-10T16:00:00"^^xsd:dateTime .
+
+ld:Session01_12 a ld:CourseSession ;
+    ld:endDateTime "2025-11-17T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Geometry ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2025-11-17T16:00:00"^^xsd:dateTime .
+
+ld:Session01_13 a ld:CourseSession ;
+    ld:absentStudent ld:Student003 ;
+    ld:endDateTime "2025-11-24T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:hasSubstituteTeacher ld:Teacher12 ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2025-11-24T16:00:00"^^xsd:dateTime .
+
+ld:Session01_14 a ld:CourseSession ;
+    ld:endDateTime "2025-12-01T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:GaussianElimination ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2025-12-01T16:00:00"^^xsd:dateTime .
+
+ld:Session01_15 a ld:CourseSession ;
+    ld:endDateTime "2025-12-08T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2025-12-08T16:00:00"^^xsd:dateTime .
+
+ld:Session01_16 a ld:CourseSession ;
+    ld:endDateTime "2025-12-15T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Probability ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2025-12-15T16:00:00"^^xsd:dateTime .
+
+ld:Session01_17 a ld:CourseSession ;
+    ld:absentStudent ld:Student006 ;
+    ld:endDateTime "2026-01-12T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Equations ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2026-01-12T16:00:00"^^xsd:dateTime .
+
+ld:Session01_18 a ld:CourseSession ;
+    ld:endDateTime "2026-01-19T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Geometry ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2026-01-19T16:00:00"^^xsd:dateTime .
+
+ld:Session01_19 a ld:CourseSession ;
+    ld:endDateTime "2026-01-26T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2026-01-26T16:00:00"^^xsd:dateTime .
+
+ld:Session01_20 a ld:CourseSession ;
+    ld:endDateTime "2026-02-02T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:GaussianElimination ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2026-02-02T16:00:00"^^xsd:dateTime .
+
+ld:Session01_21 a ld:CourseSession ;
+    ld:endDateTime "2026-02-09T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2026-02-09T16:00:00"^^xsd:dateTime .
+
+ld:Session01_22 a ld:CourseSession ;
+    ld:endDateTime "2026-02-23T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Probability ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2026-02-23T16:00:00"^^xsd:dateTime .
+
+ld:Session01_23 a ld:CourseSession ;
+    ld:absentStudent ld:Student005 ;
+    ld:endDateTime "2026-03-02T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Equations ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2026-03-02T16:00:00"^^xsd:dateTime .
+
+ld:Session01_24 a ld:CourseSession ;
+    ld:endDateTime "2026-03-09T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Geometry ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2026-03-09T16:00:00"^^xsd:dateTime .
+
+ld:Session01_25 a ld:CourseSession ;
+    ld:endDateTime "2026-03-16T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2026-03-16T16:00:00"^^xsd:dateTime .
+
+ld:Session01_26 a ld:CourseSession ;
+    ld:endDateTime "2026-03-23T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:GaussianElimination ;
+    ld:hasSubstituteTeacher ld:Teacher11 ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2026-03-23T16:00:00"^^xsd:dateTime .
+
+ld:Session01_27 a ld:CourseSession ;
+    ld:endDateTime "2026-04-13T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2026-04-13T16:00:00"^^xsd:dateTime .
+
+ld:Session01_28 a ld:CourseSession ;
+    ld:endDateTime "2026-04-20T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Probability ;
+    ld:sessionOf ld:Course01 ;
+    ld:startDateTime "2026-04-20T16:00:00"^^xsd:dateTime .
+
+ld:Session02_01 a ld:CourseSession ;
+    ld:endDateTime "2025-08-19T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Evolution ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2025-08-19T17:00:00"^^xsd:dateTime .
+
+ld:Session02_02 a ld:CourseSession ;
+    ld:endDateTime "2025-08-26T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Reproduction ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2025-08-26T17:00:00"^^xsd:dateTime .
+
+ld:Session02_03 a ld:CourseSession ;
+    ld:endDateTime "2025-09-02T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:CellBiology ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2025-09-02T17:00:00"^^xsd:dateTime .
+
+ld:Session02_04 a ld:CourseSession ;
+    ld:endDateTime "2025-09-09T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Genetics ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2025-09-09T17:00:00"^^xsd:dateTime .
+
+ld:Session02_05 a ld:CourseSession ;
+    ld:endDateTime "2025-09-16T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Ecosystems ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2025-09-16T17:00:00"^^xsd:dateTime .
+
+ld:Session02_06 a ld:CourseSession ;
+    ld:absentStudent ld:Student008 ;
+    ld:endDateTime "2025-09-23T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Evolution ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2025-09-23T17:00:00"^^xsd:dateTime .
+
+ld:Session02_07 a ld:CourseSession ;
+    ld:endDateTime "2025-09-30T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Reproduction ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2025-09-30T17:00:00"^^xsd:dateTime .
+
+ld:Session02_08 a ld:CourseSession ;
+    ld:endDateTime "2025-10-07T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:CellBiology ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2025-10-07T17:00:00"^^xsd:dateTime .
+
+ld:Session02_09 a ld:CourseSession ;
+    ld:endDateTime "2025-10-28T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Genetics ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2025-10-28T17:00:00"^^xsd:dateTime .
+
+ld:Session02_10 a ld:CourseSession ;
+    ld:endDateTime "2025-11-04T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Ecosystems ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2025-11-04T17:00:00"^^xsd:dateTime .
+
+ld:Session02_11 a ld:CourseSession ;
+    ld:endDateTime "2025-11-11T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Evolution ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2025-11-11T17:00:00"^^xsd:dateTime .
+
+ld:Session02_12 a ld:CourseSession ;
+    ld:endDateTime "2025-11-18T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Reproduction ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2025-11-18T17:00:00"^^xsd:dateTime .
+
+ld:Session02_13 a ld:CourseSession ;
+    ld:endDateTime "2025-11-25T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:CellBiology ;
+    ld:hasSubstituteTeacher ld:Teacher12 ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2025-11-25T17:00:00"^^xsd:dateTime .
+
+ld:Session02_14 a ld:CourseSession ;
+    ld:endDateTime "2025-12-02T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Genetics ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2025-12-02T17:00:00"^^xsd:dateTime .
+
+ld:Session02_15 a ld:CourseSession ;
+    ld:endDateTime "2025-12-09T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Ecosystems ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2025-12-09T17:00:00"^^xsd:dateTime .
+
+ld:Session02_16 a ld:CourseSession ;
+    ld:absentStudent ld:Student007 ;
+    ld:endDateTime "2025-12-16T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Evolution ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2025-12-16T17:00:00"^^xsd:dateTime .
+
+ld:Session02_17 a ld:CourseSession ;
+    ld:absentStudent ld:Student007 ;
+    ld:endDateTime "2026-01-13T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Reproduction ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2026-01-13T17:00:00"^^xsd:dateTime .
+
+ld:Session02_18 a ld:CourseSession ;
+    ld:endDateTime "2026-01-20T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:CellBiology ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2026-01-20T17:00:00"^^xsd:dateTime .
+
+ld:Session02_19 a ld:CourseSession ;
+    ld:endDateTime "2026-01-27T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Genetics ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2026-01-27T17:00:00"^^xsd:dateTime .
+
+ld:Session02_20 a ld:CourseSession ;
+    ld:endDateTime "2026-02-03T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Ecosystems ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2026-02-03T17:00:00"^^xsd:dateTime .
+
+ld:Session02_21 a ld:CourseSession ;
+    ld:endDateTime "2026-02-10T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Evolution ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2026-02-10T17:00:00"^^xsd:dateTime .
+
+ld:Session02_22 a ld:CourseSession ;
+    ld:endDateTime "2026-02-24T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Reproduction ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2026-02-24T17:00:00"^^xsd:dateTime .
+
+ld:Session02_23 a ld:CourseSession ;
+    ld:endDateTime "2026-03-03T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:CellBiology ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2026-03-03T17:00:00"^^xsd:dateTime .
+
+ld:Session02_24 a ld:CourseSession ;
+    ld:endDateTime "2026-03-10T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Genetics ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2026-03-10T17:00:00"^^xsd:dateTime .
+
+ld:Session02_25 a ld:CourseSession ;
+    ld:endDateTime "2026-03-17T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Ecosystems ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2026-03-17T17:00:00"^^xsd:dateTime .
+
+ld:Session02_26 a ld:CourseSession ;
+    ld:absentStudent ld:Student007 ;
+    ld:endDateTime "2026-03-24T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Evolution ;
+    ld:hasSubstituteTeacher ld:Teacher11 ;
+    ld:sessionOf ld:Course02 ;
+    ld:startDateTime "2026-03-24T17:00:00"^^xsd:dateTime .
+
+ld:Session03_01 a ld:CourseSession ;
+    ld:endDateTime "2025-08-20T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ClimateZones ;
+    ld:sessionOf ld:Course03 ;
+    ld:startDateTime "2025-08-20T15:00:00"^^xsd:dateTime .
+
+ld:Session03_02 a ld:CourseSession ;
+    ld:endDateTime "2025-09-03T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:RiverSystems ;
+    ld:sessionOf ld:Course03 ;
+    ld:startDateTime "2025-09-03T15:00:00"^^xsd:dateTime .
+
+ld:Session03_03 a ld:CourseSession ;
+    ld:endDateTime "2025-09-17T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Urbanization ;
+    ld:sessionOf ld:Course03 ;
+    ld:startDateTime "2025-09-17T15:00:00"^^xsd:dateTime .
+
+ld:Session03_04 a ld:CourseSession ;
+    ld:endDateTime "2025-10-01T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Migration ;
+    ld:sessionOf ld:Course03 ;
+    ld:startDateTime "2025-10-01T15:00:00"^^xsd:dateTime .
+
+ld:Session03_05 a ld:CourseSession ;
+    ld:endDateTime "2025-10-29T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ClimateZones ;
+    ld:sessionOf ld:Course03 ;
+    ld:startDateTime "2025-10-29T15:00:00"^^xsd:dateTime .
+
+ld:Session03_06 a ld:CourseSession ;
+    ld:endDateTime "2025-11-12T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:RiverSystems ;
+    ld:sessionOf ld:Course03 ;
+    ld:startDateTime "2025-11-12T15:00:00"^^xsd:dateTime .
+
+ld:Session03_07 a ld:CourseSession ;
+    ld:endDateTime "2025-11-26T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Urbanization ;
+    ld:sessionOf ld:Course03 ;
+    ld:startDateTime "2025-11-26T15:00:00"^^xsd:dateTime .
+
+ld:Session03_08 a ld:CourseSession ;
+    ld:endDateTime "2025-12-10T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Migration ;
+    ld:sessionOf ld:Course03 ;
+    ld:startDateTime "2025-12-10T15:00:00"^^xsd:dateTime .
+
+ld:Session03_09 a ld:CourseSession ;
+    ld:absentStudent ld:Student012 ;
+    ld:endDateTime "2026-01-14T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ClimateZones ;
+    ld:sessionOf ld:Course03 ;
+    ld:startDateTime "2026-01-14T15:00:00"^^xsd:dateTime .
+
+ld:Session03_10 a ld:CourseSession ;
+    ld:endDateTime "2026-01-28T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:RiverSystems ;
+    ld:sessionOf ld:Course03 ;
+    ld:startDateTime "2026-01-28T15:00:00"^^xsd:dateTime .
+
+ld:Session03_11 a ld:CourseSession ;
+    ld:endDateTime "2026-02-11T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Urbanization ;
+    ld:sessionOf ld:Course03 ;
+    ld:startDateTime "2026-02-11T15:00:00"^^xsd:dateTime .
+
+ld:Session03_12 a ld:CourseSession ;
+    ld:endDateTime "2026-03-04T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Migration ;
+    ld:sessionOf ld:Course03 ;
+    ld:startDateTime "2026-03-04T15:00:00"^^xsd:dateTime .
+
+ld:Session03_13 a ld:CourseSession ;
+    ld:endDateTime "2026-03-18T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ClimateZones ;
+    ld:hasSubstituteTeacher ld:Teacher12 ;
+    ld:sessionOf ld:Course03 ;
+    ld:startDateTime "2026-03-18T15:00:00"^^xsd:dateTime .
+
+ld:Session03_14 a ld:CourseSession ;
+    ld:endDateTime "2026-04-15T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:RiverSystems ;
+    ld:sessionOf ld:Course03 ;
+    ld:startDateTime "2026-04-15T15:00:00"^^xsd:dateTime .
+
+ld:Session04_01 a ld:CourseSession ;
+    ld:endDateTime "2025-08-21T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2025-08-21T16:00:00"^^xsd:dateTime .
+
+ld:Session04_02 a ld:CourseSession ;
+    ld:absentStudent ld:Student021 ;
+    ld:endDateTime "2025-08-28T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:GaussianElimination ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2025-08-28T16:00:00"^^xsd:dateTime .
+
+ld:Session04_03 a ld:CourseSession ;
+    ld:endDateTime "2025-09-04T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2025-09-04T16:00:00"^^xsd:dateTime .
+
+ld:Session04_04 a ld:CourseSession ;
+    ld:endDateTime "2025-09-11T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Probability ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2025-09-11T16:00:00"^^xsd:dateTime .
+
+ld:Session04_05 a ld:CourseSession ;
+    ld:endDateTime "2025-09-18T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Equations ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2025-09-18T16:00:00"^^xsd:dateTime .
+
+ld:Session04_06 a ld:CourseSession ;
+    ld:endDateTime "2025-09-25T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Geometry ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2025-09-25T16:00:00"^^xsd:dateTime .
+
+ld:Session04_07 a ld:CourseSession ;
+    ld:endDateTime "2025-10-02T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2025-10-02T16:00:00"^^xsd:dateTime .
+
+ld:Session04_08 a ld:CourseSession ;
+    ld:endDateTime "2025-10-09T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:GaussianElimination ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2025-10-09T16:00:00"^^xsd:dateTime .
+
+ld:Session04_09 a ld:CourseSession ;
+    ld:endDateTime "2025-10-30T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2025-10-30T16:00:00"^^xsd:dateTime .
+
+ld:Session04_10 a ld:CourseSession ;
+    ld:endDateTime "2025-11-06T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Probability ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2025-11-06T16:00:00"^^xsd:dateTime .
+
+ld:Session04_11 a ld:CourseSession ;
+    ld:endDateTime "2025-11-13T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Equations ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2025-11-13T16:00:00"^^xsd:dateTime .
+
+ld:Session04_12 a ld:CourseSession ;
+    ld:absentStudent ld:Student020 ;
+    ld:endDateTime "2025-11-20T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Geometry ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2025-11-20T16:00:00"^^xsd:dateTime .
+
+ld:Session04_13 a ld:CourseSession ;
+    ld:endDateTime "2025-11-27T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:hasSubstituteTeacher ld:Teacher12 ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2025-11-27T16:00:00"^^xsd:dateTime .
+
+ld:Session04_14 a ld:CourseSession ;
+    ld:endDateTime "2025-12-04T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:GaussianElimination ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2025-12-04T16:00:00"^^xsd:dateTime .
+
+ld:Session04_15 a ld:CourseSession ;
+    ld:endDateTime "2025-12-11T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2025-12-11T16:00:00"^^xsd:dateTime .
+
+ld:Session04_16 a ld:CourseSession ;
+    ld:endDateTime "2025-12-18T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Probability ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2025-12-18T16:00:00"^^xsd:dateTime .
+
+ld:Session04_17 a ld:CourseSession ;
+    ld:absentStudent ld:Student021 ;
+    ld:endDateTime "2026-01-08T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Equations ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2026-01-08T16:00:00"^^xsd:dateTime .
+
+ld:Session04_18 a ld:CourseSession ;
+    ld:endDateTime "2026-01-15T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Geometry ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2026-01-15T16:00:00"^^xsd:dateTime .
+
+ld:Session04_19 a ld:CourseSession ;
+    ld:endDateTime "2026-01-22T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2026-01-22T16:00:00"^^xsd:dateTime .
+
+ld:Session04_20 a ld:CourseSession ;
+    ld:endDateTime "2026-01-29T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:GaussianElimination ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2026-01-29T16:00:00"^^xsd:dateTime .
+
+ld:Session04_21 a ld:CourseSession ;
+    ld:endDateTime "2026-02-05T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2026-02-05T16:00:00"^^xsd:dateTime .
+
+ld:Session04_22 a ld:CourseSession ;
+    ld:absentStudent ld:Student021 ;
+    ld:endDateTime "2026-02-19T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Probability ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2026-02-19T16:00:00"^^xsd:dateTime .
+
+ld:Session04_23 a ld:CourseSession ;
+    ld:endDateTime "2026-02-26T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Equations ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2026-02-26T16:00:00"^^xsd:dateTime .
+
+ld:Session04_24 a ld:CourseSession ;
+    ld:endDateTime "2026-03-05T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Geometry ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2026-03-05T16:00:00"^^xsd:dateTime .
+
+ld:Session04_25 a ld:CourseSession ;
+    ld:endDateTime "2026-03-12T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2026-03-12T16:00:00"^^xsd:dateTime .
+
+ld:Session04_26 a ld:CourseSession ;
+    ld:endDateTime "2026-03-19T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:GaussianElimination ;
+    ld:hasSubstituteTeacher ld:Teacher11 ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2026-03-19T16:00:00"^^xsd:dateTime .
+
+ld:Session04_27 a ld:CourseSession ;
+    ld:endDateTime "2026-03-26T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2026-03-26T16:00:00"^^xsd:dateTime .
+
+ld:Session04_28 a ld:CourseSession ;
+    ld:endDateTime "2026-04-16T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Probability ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2026-04-16T16:00:00"^^xsd:dateTime .
+
+ld:Session04_29 a ld:CourseSession ;
+    ld:endDateTime "2026-04-23T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Equations ;
+    ld:sessionOf ld:Course04 ;
+    ld:startDateTime "2026-04-23T16:00:00"^^xsd:dateTime .
+
+ld:Session05_01 a ld:CourseSession ;
+    ld:endDateTime "2025-08-22T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Grammar ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2025-08-22T17:00:00"^^xsd:dateTime .
+
+ld:Session05_02 a ld:CourseSession ;
+    ld:endDateTime "2025-08-29T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ReadingComprehension ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2025-08-29T17:00:00"^^xsd:dateTime .
+
+ld:Session05_03 a ld:CourseSession ;
+    ld:endDateTime "2025-09-05T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ConversationalGerman ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2025-09-05T17:00:00"^^xsd:dateTime .
+
+ld:Session05_04 a ld:CourseSession ;
+    ld:endDateTime "2025-09-12T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:AcademicVocabulary ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2025-09-12T17:00:00"^^xsd:dateTime .
+
+ld:Session05_05 a ld:CourseSession ;
+    ld:absentStudent ld:Student027 ;
+    ld:endDateTime "2025-09-19T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:WritingSkills ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2025-09-19T17:00:00"^^xsd:dateTime .
+
+ld:Session05_06 a ld:CourseSession ;
+    ld:endDateTime "2025-09-26T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Grammar ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2025-09-26T17:00:00"^^xsd:dateTime .
+
+ld:Session05_07 a ld:CourseSession ;
+    ld:endDateTime "2025-10-10T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ReadingComprehension ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2025-10-10T17:00:00"^^xsd:dateTime .
+
+ld:Session05_08 a ld:CourseSession ;
+    ld:endDateTime "2025-10-31T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ConversationalGerman ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2025-10-31T17:00:00"^^xsd:dateTime .
+
+ld:Session05_09 a ld:CourseSession ;
+    ld:endDateTime "2025-11-07T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:AcademicVocabulary ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2025-11-07T17:00:00"^^xsd:dateTime .
+
+ld:Session05_10 a ld:CourseSession ;
+    ld:endDateTime "2025-11-14T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:WritingSkills ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2025-11-14T17:00:00"^^xsd:dateTime .
+
+ld:Session05_11 a ld:CourseSession ;
+    ld:endDateTime "2025-11-21T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Grammar ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2025-11-21T17:00:00"^^xsd:dateTime .
+
+ld:Session05_12 a ld:CourseSession ;
+    ld:endDateTime "2025-11-28T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ReadingComprehension ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2025-11-28T17:00:00"^^xsd:dateTime .
+
+ld:Session05_13 a ld:CourseSession ;
+    ld:endDateTime "2025-12-05T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ConversationalGerman ;
+    ld:hasSubstituteTeacher ld:Teacher12 ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2025-12-05T17:00:00"^^xsd:dateTime .
+
+ld:Session05_14 a ld:CourseSession ;
+    ld:endDateTime "2025-12-12T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:AcademicVocabulary ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2025-12-12T17:00:00"^^xsd:dateTime .
+
+ld:Session05_15 a ld:CourseSession ;
+    ld:absentStudent ld:Student023 ;
+    ld:endDateTime "2025-12-19T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:WritingSkills ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2025-12-19T17:00:00"^^xsd:dateTime .
+
+ld:Session05_16 a ld:CourseSession ;
+    ld:endDateTime "2026-01-09T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Grammar ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2026-01-09T17:00:00"^^xsd:dateTime .
+
+ld:Session05_17 a ld:CourseSession ;
+    ld:absentStudent ld:Student025 ;
+    ld:endDateTime "2026-01-16T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ReadingComprehension ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2026-01-16T17:00:00"^^xsd:dateTime .
+
+ld:Session05_18 a ld:CourseSession ;
+    ld:endDateTime "2026-01-23T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ConversationalGerman ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2026-01-23T17:00:00"^^xsd:dateTime .
+
+ld:Session05_19 a ld:CourseSession ;
+    ld:endDateTime "2026-01-30T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:AcademicVocabulary ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2026-01-30T17:00:00"^^xsd:dateTime .
+
+ld:Session05_20 a ld:CourseSession ;
+    ld:endDateTime "2026-02-06T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:WritingSkills ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2026-02-06T17:00:00"^^xsd:dateTime .
+
+ld:Session05_21 a ld:CourseSession ;
+    ld:endDateTime "2026-02-20T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Grammar ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2026-02-20T17:00:00"^^xsd:dateTime .
+
+ld:Session05_22 a ld:CourseSession ;
+    ld:endDateTime "2026-02-27T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ReadingComprehension ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2026-02-27T17:00:00"^^xsd:dateTime .
+
+ld:Session05_23 a ld:CourseSession ;
+    ld:endDateTime "2026-03-06T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ConversationalGerman ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2026-03-06T17:00:00"^^xsd:dateTime .
+
+ld:Session05_24 a ld:CourseSession ;
+    ld:endDateTime "2026-03-13T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:AcademicVocabulary ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2026-03-13T17:00:00"^^xsd:dateTime .
+
+ld:Session05_25 a ld:CourseSession ;
+    ld:absentStudent ld:Student026 ;
+    ld:endDateTime "2026-03-20T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:WritingSkills ;
+    ld:sessionOf ld:Course05 ;
+    ld:startDateTime "2026-03-20T17:00:00"^^xsd:dateTime .
+
+ld:Session06_01 a ld:CourseSession ;
+    ld:endDateTime "2025-08-18T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Industrialization ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2025-08-18T15:00:00"^^xsd:dateTime .
+
+ld:Session06_02 a ld:CourseSession ;
+    ld:endDateTime "2025-08-25T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:WeimarRepublic ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2025-08-25T15:00:00"^^xsd:dateTime .
+
+ld:Session06_03 a ld:CourseSession ;
+    ld:endDateTime "2025-09-01T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:EuropeanIntegration ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2025-09-01T15:00:00"^^xsd:dateTime .
+
+ld:Session06_04 a ld:CourseSession ;
+    ld:endDateTime "2025-09-08T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Democracy ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2025-09-08T15:00:00"^^xsd:dateTime .
+
+ld:Session06_05 a ld:CourseSession ;
+    ld:endDateTime "2025-09-15T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Industrialization ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2025-09-15T15:00:00"^^xsd:dateTime .
+
+ld:Session06_06 a ld:CourseSession ;
+    ld:endDateTime "2025-09-22T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:WeimarRepublic ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2025-09-22T15:00:00"^^xsd:dateTime .
+
+ld:Session06_07 a ld:CourseSession ;
+    ld:endDateTime "2025-09-29T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:EuropeanIntegration ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2025-09-29T15:00:00"^^xsd:dateTime .
+
+ld:Session06_08 a ld:CourseSession ;
+    ld:absentStudent ld:Student030 ;
+    ld:endDateTime "2025-10-06T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Democracy ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2025-10-06T15:00:00"^^xsd:dateTime .
+
+ld:Session06_09 a ld:CourseSession ;
+    ld:endDateTime "2025-10-27T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Industrialization ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2025-10-27T15:00:00"^^xsd:dateTime .
+
+ld:Session06_10 a ld:CourseSession ;
+    ld:endDateTime "2025-11-03T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:WeimarRepublic ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2025-11-03T15:00:00"^^xsd:dateTime .
+
+ld:Session06_11 a ld:CourseSession ;
+    ld:endDateTime "2025-11-10T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:EuropeanIntegration ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2025-11-10T15:00:00"^^xsd:dateTime .
+
+ld:Session06_12 a ld:CourseSession ;
+    ld:endDateTime "2025-11-17T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Democracy ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2025-11-17T15:00:00"^^xsd:dateTime .
+
+ld:Session06_13 a ld:CourseSession ;
+    ld:endDateTime "2025-11-24T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Industrialization ;
+    ld:hasSubstituteTeacher ld:Teacher12 ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2025-11-24T15:00:00"^^xsd:dateTime .
+
+ld:Session06_14 a ld:CourseSession ;
+    ld:endDateTime "2025-12-01T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:WeimarRepublic ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2025-12-01T15:00:00"^^xsd:dateTime .
+
+ld:Session06_15 a ld:CourseSession ;
+    ld:endDateTime "2025-12-08T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:EuropeanIntegration ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2025-12-08T15:00:00"^^xsd:dateTime .
+
+ld:Session06_16 a ld:CourseSession ;
+    ld:endDateTime "2025-12-15T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Democracy ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2025-12-15T15:00:00"^^xsd:dateTime .
+
+ld:Session06_17 a ld:CourseSession ;
+    ld:absentStudent ld:Student031 ;
+    ld:endDateTime "2026-01-12T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Industrialization ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2026-01-12T15:00:00"^^xsd:dateTime .
+
+ld:Session06_18 a ld:CourseSession ;
+    ld:absentStudent ld:Student029 ;
+    ld:endDateTime "2026-01-19T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:WeimarRepublic ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2026-01-19T15:00:00"^^xsd:dateTime .
+
+ld:Session06_19 a ld:CourseSession ;
+    ld:endDateTime "2026-01-26T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:EuropeanIntegration ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2026-01-26T15:00:00"^^xsd:dateTime .
+
+ld:Session06_20 a ld:CourseSession ;
+    ld:endDateTime "2026-02-02T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Democracy ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2026-02-02T15:00:00"^^xsd:dateTime .
+
+ld:Session06_21 a ld:CourseSession ;
+    ld:endDateTime "2026-02-09T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Industrialization ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2026-02-09T15:00:00"^^xsd:dateTime .
+
+ld:Session06_22 a ld:CourseSession ;
+    ld:endDateTime "2026-02-23T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:WeimarRepublic ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2026-02-23T15:00:00"^^xsd:dateTime .
+
+ld:Session06_23 a ld:CourseSession ;
+    ld:endDateTime "2026-03-02T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:EuropeanIntegration ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2026-03-02T15:00:00"^^xsd:dateTime .
+
+ld:Session06_24 a ld:CourseSession ;
+    ld:endDateTime "2026-03-09T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Democracy ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2026-03-09T15:00:00"^^xsd:dateTime .
+
+ld:Session06_25 a ld:CourseSession ;
+    ld:endDateTime "2026-03-16T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Industrialization ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2026-03-16T15:00:00"^^xsd:dateTime .
+
+ld:Session06_26 a ld:CourseSession ;
+    ld:endDateTime "2026-03-23T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:WeimarRepublic ;
+    ld:hasSubstituteTeacher ld:Teacher11 ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2026-03-23T15:00:00"^^xsd:dateTime .
+
+ld:Session06_27 a ld:CourseSession ;
+    ld:endDateTime "2026-04-13T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:EuropeanIntegration ;
+    ld:sessionOf ld:Course06 ;
+    ld:startDateTime "2026-04-13T15:00:00"^^xsd:dateTime .
+
+ld:Session07_01 a ld:CourseSession ;
+    ld:absentStudent ld:Student035 ;
+    ld:endDateTime "2025-08-19T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ElectricCircuits ;
+    ld:sessionOf ld:Course07 ;
+    ld:startDateTime "2025-08-19T16:00:00"^^xsd:dateTime .
+
+ld:Session07_02 a ld:CourseSession ;
+    ld:endDateTime "2025-09-02T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Motion ;
+    ld:sessionOf ld:Course07 ;
+    ld:startDateTime "2025-09-02T16:00:00"^^xsd:dateTime .
+
+ld:Session07_03 a ld:CourseSession ;
+    ld:endDateTime "2025-09-16T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:EnergyConservation ;
+    ld:sessionOf ld:Course07 ;
+    ld:startDateTime "2025-09-16T16:00:00"^^xsd:dateTime .
+
+ld:Session07_04 a ld:CourseSession ;
+    ld:endDateTime "2025-09-30T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Optics ;
+    ld:sessionOf ld:Course07 ;
+    ld:startDateTime "2025-09-30T16:00:00"^^xsd:dateTime .
+
+ld:Session07_05 a ld:CourseSession ;
+    ld:endDateTime "2025-10-28T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ElectricCircuits ;
+    ld:sessionOf ld:Course07 ;
+    ld:startDateTime "2025-10-28T16:00:00"^^xsd:dateTime .
+
+ld:Session07_06 a ld:CourseSession ;
+    ld:endDateTime "2025-11-11T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Motion ;
+    ld:sessionOf ld:Course07 ;
+    ld:startDateTime "2025-11-11T16:00:00"^^xsd:dateTime .
+
+ld:Session07_07 a ld:CourseSession ;
+    ld:endDateTime "2025-11-25T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:EnergyConservation ;
+    ld:sessionOf ld:Course07 ;
+    ld:startDateTime "2025-11-25T16:00:00"^^xsd:dateTime .
+
+ld:Session07_08 a ld:CourseSession ;
+    ld:endDateTime "2025-12-09T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Optics ;
+    ld:sessionOf ld:Course07 ;
+    ld:startDateTime "2025-12-09T16:00:00"^^xsd:dateTime .
+
+ld:Session07_09 a ld:CourseSession ;
+    ld:endDateTime "2026-01-13T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ElectricCircuits ;
+    ld:sessionOf ld:Course07 ;
+    ld:startDateTime "2026-01-13T16:00:00"^^xsd:dateTime .
+
+ld:Session07_10 a ld:CourseSession ;
+    ld:endDateTime "2026-01-27T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Motion ;
+    ld:sessionOf ld:Course07 ;
+    ld:startDateTime "2026-01-27T16:00:00"^^xsd:dateTime .
+
+ld:Session07_11 a ld:CourseSession ;
+    ld:absentStudent ld:Student034 ;
+    ld:endDateTime "2026-02-10T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:EnergyConservation ;
+    ld:sessionOf ld:Course07 ;
+    ld:startDateTime "2026-02-10T16:00:00"^^xsd:dateTime .
+
+ld:Session07_12 a ld:CourseSession ;
+    ld:endDateTime "2026-03-03T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Optics ;
+    ld:sessionOf ld:Course07 ;
+    ld:startDateTime "2026-03-03T16:00:00"^^xsd:dateTime .
+
+ld:Session07_13 a ld:CourseSession ;
+    ld:endDateTime "2026-03-17T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ElectricCircuits ;
+    ld:hasSubstituteTeacher ld:Teacher12 ;
+    ld:sessionOf ld:Course07 ;
+    ld:startDateTime "2026-03-17T16:00:00"^^xsd:dateTime .
+
+ld:Session08_01 a ld:CourseSession ;
+    ld:endDateTime "2025-08-20T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ChemicalReactions ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2025-08-20T17:00:00"^^xsd:dateTime .
+
+ld:Session08_02 a ld:CourseSession ;
+    ld:endDateTime "2025-08-27T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:AcidsAndBases ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2025-08-27T17:00:00"^^xsd:dateTime .
+
+ld:Session08_03 a ld:CourseSession ;
+    ld:endDateTime "2025-09-03T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:PeriodicTable ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2025-09-03T17:00:00"^^xsd:dateTime .
+
+ld:Session08_04 a ld:CourseSession ;
+    ld:absentStudent ld:Student038 ;
+    ld:endDateTime "2025-09-10T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ChemicalReactions ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2025-09-10T17:00:00"^^xsd:dateTime .
+
+ld:Session08_05 a ld:CourseSession ;
+    ld:endDateTime "2025-09-17T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:AcidsAndBases ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2025-09-17T17:00:00"^^xsd:dateTime .
+
+ld:Session08_06 a ld:CourseSession ;
+    ld:endDateTime "2025-09-24T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:PeriodicTable ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2025-09-24T17:00:00"^^xsd:dateTime .
+
+ld:Session08_07 a ld:CourseSession ;
+    ld:endDateTime "2025-10-01T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ChemicalReactions ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2025-10-01T17:00:00"^^xsd:dateTime .
+
+ld:Session08_08 a ld:CourseSession ;
+    ld:endDateTime "2025-10-08T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:AcidsAndBases ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2025-10-08T17:00:00"^^xsd:dateTime .
+
+ld:Session08_09 a ld:CourseSession ;
+    ld:endDateTime "2025-10-29T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:PeriodicTable ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2025-10-29T17:00:00"^^xsd:dateTime .
+
+ld:Session08_10 a ld:CourseSession ;
+    ld:endDateTime "2025-11-05T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ChemicalReactions ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2025-11-05T17:00:00"^^xsd:dateTime .
+
+ld:Session08_11 a ld:CourseSession ;
+    ld:endDateTime "2025-11-12T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:AcidsAndBases ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2025-11-12T17:00:00"^^xsd:dateTime .
+
+ld:Session08_12 a ld:CourseSession ;
+    ld:endDateTime "2025-11-19T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:PeriodicTable ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2025-11-19T17:00:00"^^xsd:dateTime .
+
+ld:Session08_13 a ld:CourseSession ;
+    ld:endDateTime "2025-11-26T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ChemicalReactions ;
+    ld:hasSubstituteTeacher ld:Teacher12 ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2025-11-26T17:00:00"^^xsd:dateTime .
+
+ld:Session08_14 a ld:CourseSession ;
+    ld:absentStudent ld:Student039 ;
+    ld:endDateTime "2025-12-03T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:AcidsAndBases ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2025-12-03T17:00:00"^^xsd:dateTime .
+
+ld:Session08_15 a ld:CourseSession ;
+    ld:endDateTime "2025-12-10T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:PeriodicTable ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2025-12-10T17:00:00"^^xsd:dateTime .
+
+ld:Session08_16 a ld:CourseSession ;
+    ld:endDateTime "2025-12-17T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ChemicalReactions ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2025-12-17T17:00:00"^^xsd:dateTime .
+
+ld:Session08_17 a ld:CourseSession ;
+    ld:absentStudent ld:Student041 ;
+    ld:endDateTime "2026-01-14T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:AcidsAndBases ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2026-01-14T17:00:00"^^xsd:dateTime .
+
+ld:Session08_18 a ld:CourseSession ;
+    ld:endDateTime "2026-01-21T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:PeriodicTable ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2026-01-21T17:00:00"^^xsd:dateTime .
+
+ld:Session08_19 a ld:CourseSession ;
+    ld:endDateTime "2026-01-28T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ChemicalReactions ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2026-01-28T17:00:00"^^xsd:dateTime .
+
+ld:Session08_20 a ld:CourseSession ;
+    ld:endDateTime "2026-02-04T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:AcidsAndBases ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2026-02-04T17:00:00"^^xsd:dateTime .
+
+ld:Session08_21 a ld:CourseSession ;
+    ld:endDateTime "2026-02-11T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:PeriodicTable ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2026-02-11T17:00:00"^^xsd:dateTime .
+
+ld:Session08_22 a ld:CourseSession ;
+    ld:endDateTime "2026-02-25T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:ChemicalReactions ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2026-02-25T17:00:00"^^xsd:dateTime .
+
+ld:Session08_23 a ld:CourseSession ;
+    ld:endDateTime "2026-03-04T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:AcidsAndBases ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2026-03-04T17:00:00"^^xsd:dateTime .
+
+ld:Session08_24 a ld:CourseSession ;
+    ld:absentStudent ld:Student038 ;
+    ld:endDateTime "2026-03-11T18:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:PeriodicTable ;
+    ld:sessionOf ld:Course08 ;
+    ld:startDateTime "2026-03-11T17:00:00"^^xsd:dateTime .
+
+ld:Session09_01 a ld:CourseSession ;
+    ld:endDateTime "2025-08-21T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2025-08-21T15:00:00"^^xsd:dateTime .
+
+ld:Session09_02 a ld:CourseSession ;
+    ld:endDateTime "2025-09-04T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:GaussianElimination ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2025-09-04T15:00:00"^^xsd:dateTime .
+
+ld:Session09_03 a ld:CourseSession ;
+    ld:endDateTime "2025-09-18T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2025-09-18T15:00:00"^^xsd:dateTime .
+
+ld:Session09_04 a ld:CourseSession ;
+    ld:endDateTime "2025-10-02T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Probability ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2025-10-02T15:00:00"^^xsd:dateTime .
+
+ld:Session09_05 a ld:CourseSession ;
+    ld:endDateTime "2025-10-30T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Equations ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2025-10-30T15:00:00"^^xsd:dateTime .
+
+ld:Session09_06 a ld:CourseSession ;
+    ld:endDateTime "2025-11-13T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Geometry ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2025-11-13T15:00:00"^^xsd:dateTime .
+
+ld:Session09_07 a ld:CourseSession ;
+    ld:absentStudent ld:Student042 ;
+    ld:endDateTime "2025-11-27T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2025-11-27T15:00:00"^^xsd:dateTime .
+
+ld:Session09_08 a ld:CourseSession ;
+    ld:endDateTime "2025-12-11T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:GaussianElimination ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2025-12-11T15:00:00"^^xsd:dateTime .
+
+ld:Session09_09 a ld:CourseSession ;
+    ld:endDateTime "2026-01-08T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2026-01-08T15:00:00"^^xsd:dateTime .
+
+ld:Session09_10 a ld:CourseSession ;
+    ld:endDateTime "2026-01-22T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Probability ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2026-01-22T15:00:00"^^xsd:dateTime .
+
+ld:Session09_11 a ld:CourseSession ;
+    ld:endDateTime "2026-02-05T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Equations ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2026-02-05T15:00:00"^^xsd:dateTime .
+
+ld:Session09_12 a ld:CourseSession ;
+    ld:endDateTime "2026-02-26T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Geometry ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2026-02-26T15:00:00"^^xsd:dateTime .
+
+ld:Session09_13 a ld:CourseSession ;
+    ld:endDateTime "2026-03-12T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:hasSubstituteTeacher ld:Teacher12 ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2026-03-12T15:00:00"^^xsd:dateTime .
+
+ld:Session09_14 a ld:CourseSession ;
+    ld:endDateTime "2026-03-26T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:GaussianElimination ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2026-03-26T15:00:00"^^xsd:dateTime .
+
+ld:Session09_15 a ld:CourseSession ;
+    ld:endDateTime "2026-04-23T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2026-04-23T15:00:00"^^xsd:dateTime .
+
+ld:Session09_16 a ld:CourseSession ;
+    ld:endDateTime "2026-05-07T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Probability ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2026-05-07T15:00:00"^^xsd:dateTime .
+
+ld:Session09_17 a ld:CourseSession ;
+    ld:absentStudent ld:Student043 ;
+    ld:endDateTime "2026-05-28T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Equations ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2026-05-28T15:00:00"^^xsd:dateTime .
+
+ld:Session09_18 a ld:CourseSession ;
+    ld:endDateTime "2026-06-18T16:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Geometry ;
+    ld:sessionOf ld:Course09 ;
+    ld:startDateTime "2026-06-18T15:00:00"^^xsd:dateTime .
+
+ld:Session10_01 a ld:CourseSession ;
+    ld:endDateTime "2025-08-22T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2025-08-22T16:00:00"^^xsd:dateTime .
+
+ld:Session10_02 a ld:CourseSession ;
+    ld:endDateTime "2025-08-29T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Reproduction ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2025-08-29T16:00:00"^^xsd:dateTime .
+
+ld:Session10_03 a ld:CourseSession ;
+    ld:endDateTime "2025-09-05T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2025-09-05T16:00:00"^^xsd:dateTime .
+
+ld:Session10_04 a ld:CourseSession ;
+    ld:endDateTime "2025-09-12T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Genetics ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2025-09-12T16:00:00"^^xsd:dateTime .
+
+ld:Session10_05 a ld:CourseSession ;
+    ld:endDateTime "2025-09-19T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Equations,
+        ld:Reproduction ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2025-09-19T16:00:00"^^xsd:dateTime .
+
+ld:Session10_06 a ld:CourseSession ;
+    ld:endDateTime "2025-09-26T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Evolution ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2025-09-26T16:00:00"^^xsd:dateTime .
+
+ld:Session10_07 a ld:CourseSession ;
+    ld:endDateTime "2025-10-10T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2025-10-10T16:00:00"^^xsd:dateTime .
+
+ld:Session10_08 a ld:CourseSession ;
+    ld:endDateTime "2025-10-31T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:CellBiology ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2025-10-31T16:00:00"^^xsd:dateTime .
+
+ld:Session10_09 a ld:CourseSession ;
+    ld:endDateTime "2025-11-07T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2025-11-07T16:00:00"^^xsd:dateTime .
+
+ld:Session10_10 a ld:CourseSession ;
+    ld:absentStudent ld:Student050 ;
+    ld:endDateTime "2025-11-14T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Ecosystems,
+        ld:LinearFunctions ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2025-11-14T16:00:00"^^xsd:dateTime .
+
+ld:Session10_11 a ld:CourseSession ;
+    ld:endDateTime "2025-11-21T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Equations ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2025-11-21T16:00:00"^^xsd:dateTime .
+
+ld:Session10_12 a ld:CourseSession ;
+    ld:endDateTime "2025-11-28T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Reproduction ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2025-11-28T16:00:00"^^xsd:dateTime .
+
+ld:Session10_13 a ld:CourseSession ;
+    ld:endDateTime "2025-12-05T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:hasSubstituteTeacher ld:Teacher12 ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2025-12-05T16:00:00"^^xsd:dateTime .
+
+ld:Session10_14 a ld:CourseSession ;
+    ld:endDateTime "2025-12-12T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Genetics ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2025-12-12T16:00:00"^^xsd:dateTime .
+
+ld:Session10_15 a ld:CourseSession ;
+    ld:endDateTime "2025-12-19T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Genetics,
+        ld:LinearFunctions ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2025-12-19T16:00:00"^^xsd:dateTime .
+
+ld:Session10_16 a ld:CourseSession ;
+    ld:endDateTime "2026-01-09T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Evolution ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2026-01-09T16:00:00"^^xsd:dateTime .
+
+ld:Session10_17 a ld:CourseSession ;
+    ld:absentStudent ld:Student051 ;
+    ld:endDateTime "2026-01-16T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Equations ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2026-01-16T16:00:00"^^xsd:dateTime .
+
+ld:Session10_18 a ld:CourseSession ;
+    ld:endDateTime "2026-01-23T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:CellBiology ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2026-01-23T16:00:00"^^xsd:dateTime .
+
+ld:Session10_19 a ld:CourseSession ;
+    ld:endDateTime "2026-01-30T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2026-01-30T16:00:00"^^xsd:dateTime .
+
+ld:Session10_20 a ld:CourseSession ;
+    ld:absentStudent ld:Student047 ;
+    ld:endDateTime "2026-02-06T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Ecosystems,
+        ld:Equations ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2026-02-06T16:00:00"^^xsd:dateTime .
+
+ld:Session10_21 a ld:CourseSession ;
+    ld:endDateTime "2026-02-20T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2026-02-20T16:00:00"^^xsd:dateTime .
+
+ld:Session10_22 a ld:CourseSession ;
+    ld:endDateTime "2026-02-27T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Reproduction ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2026-02-27T16:00:00"^^xsd:dateTime .
+
+ld:Session10_23 a ld:CourseSession ;
+    ld:endDateTime "2026-03-06T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Equations ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2026-03-06T16:00:00"^^xsd:dateTime .
+
+ld:Session10_24 a ld:CourseSession ;
+    ld:endDateTime "2026-03-13T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Genetics ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2026-03-13T16:00:00"^^xsd:dateTime .
+
+ld:Session10_25 a ld:CourseSession ;
+    ld:endDateTime "2026-03-20T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Differentiation,
+        ld:Evolution ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2026-03-20T16:00:00"^^xsd:dateTime .
+
+ld:Session10_26 a ld:CourseSession ;
+    ld:endDateTime "2026-03-27T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:Evolution ;
+    ld:hasSubstituteTeacher ld:Teacher11 ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2026-03-27T16:00:00"^^xsd:dateTime .
+
+ld:Session10_27 a ld:CourseSession ;
+    ld:endDateTime "2026-04-17T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:LinearFunctions ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2026-04-17T16:00:00"^^xsd:dateTime .
+
+ld:Session10_28 a ld:CourseSession ;
+    ld:endDateTime "2026-04-24T17:30:00"^^xsd:dateTime ;
+    ld:hasSpecificSubject ld:CellBiology ;
+    ld:sessionOf ld:Course10 ;
+    ld:startDateTime "2026-04-24T16:00:00"^^xsd:dateTime .
+
+ld:Student001 a ld:Student ;
+    ld:attendsSchool ld:FalkenhofBBS ;
+    ld:birthDate "2009-09-16"^^xsd:date ;
+    ld:enrolledIn ld:Course01 ;
+    ld:firstName "Amira" ;
+    ld:hasLanguageProficiency ld:Proficiency001_German,
+        ld:Proficiency001_Spanish ;
+    ld:hasNativeLanguage ld:Polish ;
+    ld:inGrade ld:Grade11 ;
+    ld:surname "Pavlenko" .
+
+ld:Student002 a ld:Student ;
+    ld:attendsSchool ld:LindenquellIGS ;
+    ld:birthDate "2007-03-04"^^xsd:date ;
+    ld:enrolledIn ld:Course01 ;
+    ld:firstName "Yara" ;
+    ld:hasLanguageProficiency ld:Proficiency002_German,
+        ld:Proficiency002_Turkish ;
+    ld:hasNativeLanguage ld:Kurdish ;
+    ld:inGrade ld:Grade12 ;
+    ld:surname "Mansour" .
+
+ld:Student004 a ld:Student ;
+    ld:attendsSchool ld:SteinwieseBBS ;
+    ld:birthDate "2009-10-05"^^xsd:date ;
+    ld:enrolledIn ld:Course01 ;
+    ld:firstName "Leyla" ;
+    ld:hasLanguageProficiency ld:Proficiency004_German,
+        ld:Proficiency004_Russian ;
+    ld:hasNativeLanguage ld:Spanish ;
+    ld:inGrade ld:Grade9 ;
+    ld:surname "Radovic" .
+
+ld:Student009 a ld:Student ;
+    ld:attendsSchool ld:SteinwieseBBS ;
+    ld:birthDate "2009-04-11"^^xsd:date ;
+    ld:enrolledIn ld:Course02 ;
+    ld:firstName "Sara" ;
+    ld:hasLanguageProficiency ld:Proficiency009_German,
+        ld:Proficiency009_Spanish ;
+    ld:hasNativeLanguage ld:French ;
+    ld:inGrade ld:Grade10 ;
+    ld:surname "Aslan" .
+
+ld:Student010 a ld:Student ;
+    ld:attendsSchool ld:ElmbachGymnasium ;
+    ld:birthDate "2010-07-13"^^xsd:date ;
+    ld:enrolledIn ld:Course02 ;
+    ld:firstName "Nadia" ;
+    ld:hasLanguageProficiency ld:Proficiency010_English,
+        ld:Proficiency010_German,
+        ld:Proficiency010_Turkish ;
+    ld:hasNativeLanguage ld:Italian ;
+    ld:inGrade ld:Grade11 ;
+    ld:surname "Ionescu" .
+
+ld:Student011 a ld:Student ;
+    ld:attendsSchool ld:WaldbrueckenRealschule ;
+    ld:birthDate "2006-02-19"^^xsd:date ;
+    ld:enrolledIn ld:Course02 ;
+    ld:firstName "Khalil" ;
+    ld:hasLanguageProficiency ld:Proficiency011_Arabic,
+        ld:Proficiency011_German ;
+    ld:hasNativeLanguage ld:Turkish ;
+    ld:inGrade ld:Grade12 ;
+    ld:surname "Dogan" .
+
+ld:Student013 a ld:Student ;
+    ld:attendsSchool ld:NordtalGymnasium ;
+    ld:birthDate "2008-07-14"^^xsd:date ;
+    ld:enrolledIn ld:Course03 ;
+    ld:firstName "Tarek" ;
+    ld:hasLanguageProficiency ld:Proficiency013_German,
+        ld:Proficiency013_Polish ;
+    ld:hasNativeLanguage ld:Albanian ;
+    ld:inGrade ld:Grade10 ;
+    ld:surname "Najjar" .
+
+ld:Student014 a ld:Student ;
+    ld:attendsSchool ld:SteinwieseBBS ;
+    ld:birthDate "2008-07-18"^^xsd:date ;
+    ld:enrolledIn ld:Course03 ;
+    ld:firstName "Emina" ;
+    ld:hasLanguageProficiency ld:Proficiency014_German,
+        ld:Proficiency014_Italian ;
+    ld:hasNativeLanguage ld:Dari ;
+    ld:inGrade ld:Grade11 ;
+    ld:surname "Ali" .
+
+ld:Student015 a ld:Student ;
+    ld:attendsSchool ld:ElmbachGymnasium ;
+    ld:birthDate "2009-02-14"^^xsd:date ;
+    ld:enrolledIn ld:Course03 ;
+    ld:firstName "Ibrahim" ;
+    ld:hasLanguageProficiency ld:Proficiency015_English,
+        ld:Proficiency015_French,
+        ld:Proficiency015_German ;
+    ld:hasNativeLanguage ld:Vietnamese ;
+    ld:inGrade ld:Grade12 ;
+    ld:surname "Sharif" .
+
+ld:Student016 a ld:Student ;
+    ld:attendsSchool ld:FalkenhofBBS ;
+    ld:birthDate "2011-08-18"^^xsd:date ;
+    ld:enrolledIn ld:Course04 ;
+    ld:firstName "Elif" ;
+    ld:hasLanguageProficiency ld:Proficiency016_German,
+        ld:Proficiency016_Spanish ;
+    ld:hasNativeLanguage ld:Persian,
+        ld:Turkish ;
+    ld:inGrade ld:Grade9 ;
+    ld:surname "Jovic" .
+
+ld:Student017 a ld:Student ;
+    ld:attendsSchool ld:LindenquellIGS ;
+    ld:birthDate "2010-10-09"^^xsd:date ;
+    ld:enrolledIn ld:Course04 ;
+    ld:firstName "Petro" ;
+    ld:hasLanguageProficiency ld:Proficiency017_German,
+        ld:Proficiency017_Turkish ;
+    ld:hasNativeLanguage ld:Polish ;
+    ld:inGrade ld:Grade10 ;
+    ld:surname "Yilmaz" .
+
+ld:Student018 a ld:Student ;
+    ld:attendsSchool ld:NordtalGymnasium ;
+    ld:birthDate "2009-05-13"^^xsd:date ;
+    ld:enrolledIn ld:Course04 ;
+    ld:firstName "Lina" ;
+    ld:hasLanguageProficiency ld:Proficiency018_Arabic,
+        ld:Proficiency018_German ;
+    ld:hasNativeLanguage ld:Kurdish ;
+    ld:inGrade ld:Grade11 ;
+    ld:surname "Kovalenko" .
+
+ld:Student019 a ld:Student ;
+    ld:attendsSchool ld:SteinwieseBBS ;
+    ld:birthDate "2007-07-16"^^xsd:date ;
+    ld:enrolledIn ld:Course04 ;
+    ld:firstName "Azra" ;
+    ld:hasLanguageProficiency ld:Proficiency019_German,
+        ld:Proficiency019_Russian ;
+    ld:hasNativeLanguage ld:Serbian ;
+    ld:inGrade ld:Grade12 ;
+    ld:surname "Saleh" .
+
+ld:Student022 a ld:Student ;
+    ld:attendsSchool ld:FalkenhofBBS ;
+    ld:birthDate "2010-12-11"^^xsd:date ;
+    ld:enrolledIn ld:Course04 ;
+    ld:firstName "Noor" ;
+    ld:hasLanguageProficiency ld:Proficiency022_German,
+        ld:Proficiency022_Italian ;
+    ld:hasNativeLanguage ld:Ukrainian ;
+    ld:inGrade ld:Grade10 ;
+    ld:surname "Mirza" .
+
+ld:Student024 a ld:Student ;
+    ld:attendsSchool ld:SteinwieseBBS ;
+    ld:birthDate "2007-12-05"^^xsd:date ;
+    ld:enrolledIn ld:Course05 ;
+    ld:firstName "Marta" ;
+    ld:hasLanguageProficiency ld:Proficiency024_German,
+        ld:Proficiency024_Spanish ;
+    ld:hasNativeLanguage ld:Bosnian,
+        ld:Vietnamese ;
+    ld:inGrade ld:Grade13 ;
+    ld:surname "Hassan" .
+
+ld:Student028 a ld:Student ;
+    ld:attendsSchool ld:NordtalGymnasium ;
+    ld:birthDate "2005-01-19"^^xsd:date ;
+    ld:enrolledIn ld:Course06 ;
+    ld:firstName "Samir" ;
+    ld:hasLanguageProficiency ld:Proficiency028_German,
+        ld:Proficiency028_Polish ;
+    ld:hasNativeLanguage ld:Romanian ;
+    ld:inGrade ld:Grade13 ;
+    ld:surname "Mustafa" .
+
+ld:Student032 a ld:Student ;
+    ld:attendsSchool ld:FalkenhofBBS ;
+    ld:birthDate "2008-02-13"^^xsd:date ;
+    ld:enrolledIn ld:Course06 ;
+    ld:firstName "Yusuf" ;
+    ld:hasLanguageProficiency ld:Proficiency032_German,
+        ld:Proficiency032_Spanish ;
+    ld:hasNativeLanguage ld:Arabic,
+        ld:Romanian ;
+    ld:inGrade ld:Grade12 ;
+    ld:surname "Rahmani" .
+
+ld:Student033 a ld:Student ;
+    ld:attendsSchool ld:LindenquellIGS ;
+    ld:birthDate "2007-12-25"^^xsd:date ;
+    ld:enrolledIn ld:Course06 ;
+    ld:firstName "Alina" ;
+    ld:hasLanguageProficiency ld:Proficiency033_German,
+        ld:Proficiency033_Turkish ;
+    ld:hasNativeLanguage ld:Russian ;
+    ld:inGrade ld:Grade13 ;
+    ld:surname "Dervishi" .
+
+ld:Student036 a ld:Student ;
+    ld:attendsSchool ld:WaldbrueckenRealschule ;
+    ld:birthDate "2008-12-13"^^xsd:date ;
+    ld:enrolledIn ld:Course07 ;
+    ld:firstName "Zara" ;
+    ld:hasLanguageProficiency ld:Proficiency036_German,
+        ld:Proficiency036_Polish ;
+    ld:hasNativeLanguage ld:Spanish ;
+    ld:inGrade ld:Grade12 ;
+    ld:surname "Baran" .
+
+ld:Student037 a ld:Student ;
+    ld:attendsSchool ld:LindenquellIGS ;
+    ld:birthDate "2010-01-01"^^xsd:date ;
+    ld:enrolledIn ld:Course08 ;
+    ld:firstName "Maksym" ;
+    ld:hasLanguageProficiency ld:Proficiency037_English,
+        ld:Proficiency037_German ;
+    ld:hasNativeLanguage ld:Arabic ;
+    ld:inGrade ld:Grade9 ;
+    ld:surname "Moradi" .
+
+ld:Student040 a ld:Student ;
+    ld:attendsSchool ld:ElmbachGymnasium ;
+    ld:birthDate "2007-02-28"^^xsd:date ;
+    ld:enrolledIn ld:Course08 ;
+    ld:firstName "Kaan" ;
+    ld:hasLanguageProficiency ld:Proficiency040_English,
+        ld:Proficiency040_German,
+        ld:Proficiency040_Turkish ;
+    ld:hasNativeLanguage ld:Bosnian,
+        ld:Vietnamese ;
+    ld:inGrade ld:Grade12 ;
+    ld:surname "Petrov" .
+
+ld:Student044 a ld:Student ;
+    ld:attendsSchool ld:SteinwieseBBS ;
+    ld:birthDate "2007-09-03"^^xsd:date ;
+    ld:enrolledIn ld:Course09 ;
+    ld:firstName "Tarik" ;
+    ld:hasLanguageProficiency ld:Proficiency044_German,
+        ld:Proficiency044_Italian ;
+    ld:hasNativeLanguage ld:Romanian ;
+    ld:inGrade ld:Grade12 ;
+    ld:surname "Dragic" .
+
+ld:Student045 a ld:Student ;
+    ld:attendsSchool ld:ElmbachGymnasium ;
+    ld:birthDate "2006-07-28"^^xsd:date ;
+    ld:enrolledIn ld:Course09 ;
+    ld:firstName "Mariam" ;
+    ld:hasLanguageProficiency ld:Proficiency045_English,
+        ld:Proficiency045_French,
+        ld:Proficiency045_German ;
+    ld:hasNativeLanguage ld:Albanian ;
+    ld:inGrade ld:Grade13 ;
+    ld:surname "Sami" .
+
+ld:Student046 a ld:Student ;
+    ld:attendsSchool ld:FalkenhofBBS ;
+    ld:birthDate "2010-01-12"^^xsd:date ;
+    ld:enrolledIn ld:Course10 ;
+    ld:firstName "Amina" ;
+    ld:hasLanguageProficiency ld:Proficiency046_German,
+        ld:Proficiency046_Spanish ;
+    ld:hasNativeLanguage ld:French ;
+    ld:inGrade ld:Grade10 ;
+    ld:surname "Lazic" .
+
+ld:Student048 a ld:Student ;
+    ld:attendsSchool ld:NordtalGymnasium ;
+    ld:birthDate "2008-07-22"^^xsd:date ;
+    ld:enrolledIn ld:Course10 ;
+    ld:firstName "Murat" ;
+    ld:hasLanguageProficiency ld:Proficiency048_Arabic,
+        ld:Proficiency048_German ;
+    ld:hasNativeLanguage ld:Persian,
+        ld:Turkish ;
+    ld:inGrade ld:Grade12 ;
+    ld:surname "Tomic" .
+
+ld:Student049 a ld:Student ;
+    ld:attendsSchool ld:SteinwieseBBS ;
+    ld:birthDate "2007-04-11"^^xsd:date ;
+    ld:enrolledIn ld:Course10 ;
+    ld:firstName "Fatima" ;
+    ld:hasLanguageProficiency ld:Proficiency049_German,
+        ld:Proficiency049_Russian ;
+    ld:hasNativeLanguage ld:Polish ;
+    ld:inGrade ld:Grade13 ;
+    ld:surname "Sahin" .
+
+ld:Teacher01 a ld:Teacher ;
+    rdfs:label "Mara Seifert" .
+
+ld:Teacher02 a ld:Teacher ;
+    rdfs:label "Jonas Winter" .
+
+ld:Teacher03 a ld:Teacher ;
+    rdfs:label "Elena Voss" .
+
+ld:Teacher04 a ld:Teacher ;
+    rdfs:label "David Hartwig" .
+
+ld:Teacher05 a ld:Teacher ;
+    rdfs:label "Sofia Bergmann" .
+
+ld:Teacher06 a ld:Teacher ;
+    rdfs:label "Leonie Falk" .
+
+ld:Teacher07 a ld:Teacher ;
+    rdfs:label "Nils Kramer" .
+
+ld:Teacher08 a ld:Teacher ;
+    rdfs:label "Aylin Neumann" .
+
+ld:Teacher09 a ld:Teacher ;
+    rdfs:label "Robin Keller" .
+
+ld:Teacher10 a ld:Teacher ;
+    rdfs:label "Tessa Brandt" .
+
+ld:Dari a ld:Language ;
+    rdfs:label "دری" .
+
+ld:Gymnasium a ld:SchoolType ;
+    rdfs:label "Gymnasium" .
+
+ld:Student003 a ld:Student ;
+    ld:attendsSchool ld:NordtalGymnasium ;
+    ld:birthDate "2006-10-14"^^xsd:date ;
+    ld:enrolledIn ld:Course01 ;
+    ld:firstName "Dilan" ;
+    ld:hasLanguageProficiency ld:Proficiency003_Arabic,
+        ld:Proficiency003_German ;
+    ld:hasNativeLanguage ld:Serbian ;
+    ld:inGrade ld:Grade13 ;
+    ld:surname "Rossi" .
+
+ld:Student005 a ld:Student ;
+    ld:attendsSchool ld:ElmbachGymnasium ;
+    ld:birthDate "2010-11-20"^^xsd:date ;
+    ld:enrolledIn ld:Course01 ;
+    ld:firstName "Omar" ;
+    ld:hasLanguageProficiency ld:Proficiency005_English,
+        ld:Proficiency005_German,
+        ld:Proficiency005_Ukrainian ;
+    ld:hasNativeLanguage ld:Portuguese ;
+    ld:inGrade ld:Grade10 ;
+    ld:surname "Osman" .
+
+ld:Student008 a ld:Student ;
+    ld:attendsSchool ld:NordtalGymnasium ;
+    ld:birthDate "2011-06-13"^^xsd:date ;
+    ld:enrolledIn ld:Course02 ;
+    ld:firstName "Farid" ;
+    ld:hasLanguageProficiency ld:Proficiency008_French,
+        ld:Proficiency008_German ;
+    ld:hasNativeLanguage ld:Bosnian,
+        ld:Vietnamese ;
+    ld:inGrade ld:Grade9 ;
+    ld:surname "Haddad" .
+
+ld:Student012 a ld:Student ;
+    ld:attendsSchool ld:LindenquellIGS ;
+    ld:birthDate "2011-02-27"^^xsd:date ;
+    ld:enrolledIn ld:Course03 ;
+    ld:firstName "Ana" ;
+    ld:hasLanguageProficiency ld:Proficiency012_German,
+        ld:Proficiency012_Ukrainian ;
+    ld:hasNativeLanguage ld:Romanian ;
+    ld:inGrade ld:Grade9 ;
+    ld:surname "Popescu" .
+
+ld:Student020 a ld:Student ;
+    ld:attendsSchool ld:ElmbachGymnasium ;
+    ld:birthDate "2006-08-10"^^xsd:date ;
+    ld:enrolledIn ld:Course04 ;
+    ld:firstName "Boris" ;
+    ld:hasLanguageProficiency ld:Proficiency020_English,
+        ld:Proficiency020_German,
+        ld:Proficiency020_Ukrainian ;
+    ld:hasNativeLanguage ld:Spanish ;
+    ld:inGrade ld:Grade13 ;
+    ld:surname "Nouri" .
+
+ld:Student023 a ld:Student ;
+    ld:attendsSchool ld:NordtalGymnasium ;
+    ld:birthDate "2006-10-22"^^xsd:date ;
+    ld:enrolledIn ld:Course05 ;
+    ld:firstName "Selin" ;
+    ld:hasLanguageProficiency ld:Proficiency023_French,
+        ld:Proficiency023_German ;
+    ld:hasNativeLanguage ld:Persian ;
+    ld:inGrade ld:Grade12 ;
+    ld:surname "Avdi" .
+
+ld:Student025 a ld:Student ;
+    ld:attendsSchool ld:ElmbachGymnasium ;
+    ld:birthDate "2011-01-04"^^xsd:date ;
+    ld:enrolledIn ld:Course05 ;
+    ld:firstName "Nour" ;
+    ld:hasLanguageProficiency ld:Proficiency025_English,
+        ld:Proficiency025_German,
+        ld:Proficiency025_Turkish ;
+    ld:hasNativeLanguage ld:French ;
+    ld:inGrade ld:Grade9 ;
+    ld:surname "Faris" .
+
+ld:Student026 a ld:Student ;
+    ld:attendsSchool ld:WaldbrueckenRealschule ;
+    ld:birthDate "2011-09-07"^^xsd:date ;
+    ld:enrolledIn ld:Course05 ;
+    ld:firstName "Elias" ;
+    ld:hasLanguageProficiency ld:Proficiency026_Arabic,
+        ld:Proficiency026_German ;
+    ld:hasNativeLanguage ld:Italian ;
+    ld:inGrade ld:Grade10 ;
+    ld:surname "Dabiri" .
+
+ld:Student027 a ld:Student ;
+    ld:attendsSchool ld:FalkenhofBBS ;
+    ld:birthDate "2009-03-13"^^xsd:date ;
+    ld:enrolledIn ld:Course05 ;
+    ld:firstName "Iryna" ;
+    ld:hasLanguageProficiency ld:Proficiency027_German,
+        ld:Proficiency027_Russian ;
+    ld:hasNativeLanguage ld:Turkish ;
+    ld:inGrade ld:Grade11 ;
+    ld:surname "Ismail" .
+
+ld:Student029 a ld:Student ;
+    ld:attendsSchool ld:SteinwieseBBS ;
+    ld:birthDate "2010-05-21"^^xsd:date ;
+    ld:enrolledIn ld:Course06 ;
+    ld:firstName "Daria" ;
+    ld:hasLanguageProficiency ld:Proficiency029_German,
+        ld:Proficiency029_Italian ;
+    ld:hasNativeLanguage ld:Albanian ;
+    ld:inGrade ld:Grade9 ;
+    ld:surname "Hamdan" .
+
+ld:Student030 a ld:Student ;
+    ld:attendsSchool ld:ElmbachGymnasium ;
+    ld:birthDate "2010-07-28"^^xsd:date ;
+    ld:enrolledIn ld:Course06 ;
+    ld:firstName "Hana" ;
+    ld:hasLanguageProficiency ld:Proficiency030_English,
+        ld:Proficiency030_French,
+        ld:Proficiency030_German ;
+    ld:hasNativeLanguage ld:Dari ;
+    ld:inGrade ld:Grade10 ;
+    ld:surname "Radu" .
+
+ld:Student031 a ld:Student ;
+    ld:attendsSchool ld:WaldbrueckenRealschule ;
+    ld:birthDate "2009-04-15"^^xsd:date ;
+    ld:enrolledIn ld:Course06 ;
+    ld:firstName "Adnan" ;
+    ld:hasLanguageProficiency ld:Proficiency031_French,
+        ld:Proficiency031_German ;
+    ld:hasNativeLanguage ld:Vietnamese ;
+    ld:inGrade ld:Grade11 ;
+    ld:surname "Demir" .
+
+ld:Student034 a ld:Student ;
+    ld:attendsSchool ld:SteinwieseBBS ;
+    ld:birthDate "2009-02-19"^^xsd:date ;
+    ld:enrolledIn ld:Course07 ;
+    ld:firstName "Rami" ;
+    ld:hasLanguageProficiency ld:Proficiency034_German,
+        ld:Proficiency034_Russian ;
+    ld:hasNativeLanguage ld:Kurdish ;
+    ld:inGrade ld:Grade10 ;
+    ld:surname "Kowalska" .
+
+ld:Student035 a ld:Student ;
+    ld:attendsSchool ld:ElmbachGymnasium ;
+    ld:birthDate "2009-03-16"^^xsd:date ;
+    ld:enrolledIn ld:Course07 ;
+    ld:firstName "Rasha" ;
+    ld:hasLanguageProficiency ld:Proficiency035_English,
+        ld:Proficiency035_German,
+        ld:Proficiency035_Ukrainian ;
+    ld:hasNativeLanguage ld:Serbian ;
+    ld:inGrade ld:Grade11 ;
+    ld:surname "Bashir" .
+
+ld:Student039 a ld:Student ;
+    ld:attendsSchool ld:SteinwieseBBS ;
+    ld:birthDate "2008-10-15"^^xsd:date ;
+    ld:enrolledIn ld:Course08 ;
+    ld:firstName "Nika" ;
+    ld:hasLanguageProficiency ld:Proficiency039_German,
+        ld:Proficiency039_Spanish ;
+    ld:hasNativeLanguage ld:Persian ;
+    ld:inGrade ld:Grade11 ;
+    ld:surname "Nowak" .
+
+ld:Student041 a ld:Student ;
+    ld:attendsSchool ld:WaldbrueckenRealschule ;
+    ld:birthDate "2005-07-22"^^xsd:date ;
+    ld:enrolledIn ld:Course08 ;
+    ld:firstName "Maya" ;
+    ld:hasLanguageProficiency ld:Proficiency041_Arabic,
+        ld:Proficiency041_German ;
+    ld:hasNativeLanguage ld:French ;
+    ld:inGrade ld:Grade13 ;
+    ld:surname "Ahmed" .
+
+ld:Student042 a ld:Student ;
+    ld:attendsSchool ld:LindenquellIGS ;
+    ld:birthDate "2010-06-27"^^xsd:date ;
+    ld:enrolledIn ld:Course09 ;
+    ld:firstName "Iman" ;
+    ld:hasLanguageProficiency ld:Proficiency042_German,
+        ld:Proficiency042_Ukrainian ;
+    ld:hasNativeLanguage ld:Portuguese ;
+    ld:inGrade ld:Grade10 ;
+    ld:surname "Hoxha" .
+
+ld:Student043 a ld:Student ;
+    ld:attendsSchool ld:NordtalGymnasium ;
+    ld:birthDate "2007-04-11"^^xsd:date ;
+    ld:enrolledIn ld:Course09 ;
+    ld:firstName "Mina" ;
+    ld:hasLanguageProficiency ld:Proficiency043_German,
+        ld:Proficiency043_Polish ;
+    ld:hasNativeLanguage ld:Ukrainian ;
+    ld:inGrade ld:Grade11 ;
+    ld:surname "Yousef" .
+
+ld:Student047 a ld:Student ;
+    ld:attendsSchool ld:LindenquellIGS ;
+    ld:birthDate "2009-07-17"^^xsd:date ;
+    ld:enrolledIn ld:Course10 ;
+    ld:firstName "Luka" ;
+    ld:hasLanguageProficiency ld:Proficiency047_German,
+        ld:Proficiency047_Turkish ;
+    ld:hasNativeLanguage ld:Italian ;
+    ld:inGrade ld:Grade11 ;
+    ld:surname "Kaya" .
+
+ld:Student050 a ld:Student ;
+    ld:attendsSchool ld:ElmbachGymnasium ;
+    ld:birthDate "2010-09-15"^^xsd:date ;
+    ld:enrolledIn ld:Course10 ;
+    ld:firstName "Lara" ;
+    ld:hasLanguageProficiency ld:Proficiency050_English,
+        ld:Proficiency050_German,
+        ld:Proficiency050_Ukrainian ;
+    ld:hasNativeLanguage ld:Kurdish ;
+    ld:inGrade ld:Grade9 ;
+    ld:surname "Markovic" .
+
+ld:Student051 a ld:Student ;
+    ld:attendsSchool ld:WaldbrueckenRealschule ;
+    ld:birthDate "2009-04-09"^^xsd:date ;
+    ld:enrolledIn ld:Course10 ;
+    ld:firstName "Emir" ;
+    ld:hasLanguageProficiency ld:Proficiency051_German,
+        ld:Proficiency051_Polish ;
+    ld:hasNativeLanguage ld:Serbian ;
+    ld:inGrade ld:Grade10 ;
+    ld:surname "Stojanov" .
+
+ld:VocationalSchool a ld:SchoolType ;
+    rdfs:label "Berufsbildende Schule" .
+
+ld:Albanian a ld:Language ;
+    rdfs:label "shqip" .
+
+ld:Bosnian a ld:Language ;
+    rdfs:label "bosanski" .
+
+ld:EnergyConservation a ld:SpecificSubject ;
+    rdfs:label "EnergyConservation" ;
+    ld:belongsToGeneralSubject ld:Physics .
+
+ld:Migration a ld:SpecificSubject ;
+    rdfs:label "Migration" ;
+    ld:belongsToGeneralSubject ld:Geography .
+
+ld:Motion a ld:SpecificSubject ;
+    rdfs:label "Motion" ;
+    ld:belongsToGeneralSubject ld:Physics .
+
+ld:Optics a ld:SpecificSubject ;
+    rdfs:label "Optics" ;
+    ld:belongsToGeneralSubject ld:Physics .
+
+ld:Portuguese a ld:Language ;
+    rdfs:label "português" .
+
+ld:Student006 a ld:Student ;
+    ld:attendsSchool ld:WaldbrueckenRealschule ;
+    ld:birthDate "2009-10-11"^^xsd:date ;
+    ld:enrolledIn ld:Course01 ;
+    ld:firstName "Rania" ;
+    ld:hasLanguageProficiency ld:Proficiency006_German,
+        ld:Proficiency006_Polish ;
+    ld:hasNativeLanguage ld:Ukrainian ;
+    ld:inGrade ld:Grade11 ;
+    ld:surname "Celik" .
+
+ld:Student038 a ld:Student ;
+    ld:attendsSchool ld:NordtalGymnasium ;
+    ld:birthDate "2009-09-16"^^xsd:date ;
+    ld:enrolledIn ld:Course08 ;
+    ld:firstName "Leila" ;
+    ld:hasLanguageProficiency ld:Proficiency038_French,
+        ld:Proficiency038_German ;
+    ld:hasNativeLanguage ld:Russian ;
+    ld:inGrade ld:Grade10 ;
+    ld:surname "Arslan" .
+
+ld:Urbanization a ld:SpecificSubject ;
+    rdfs:label "Urbanization" ;
+    ld:belongsToGeneralSubject ld:Geography .
+
+ld:Chemistry a ld:GeneralSubject ;
+    rdfs:label "Chemistry" .
+
+ld:ClimateZones a ld:SpecificSubject ;
+    rdfs:label "ClimateZones" ;
+    ld:belongsToGeneralSubject ld:Geography .
+
+ld:ElectricCircuits a ld:SpecificSubject ;
+    rdfs:label "ElectricCircuits" ;
+    ld:belongsToGeneralSubject ld:Physics .
+
+ld:Kurdish a ld:Language ;
+    rdfs:label "Kurdî" .
+
+ld:RiverSystems a ld:SpecificSubject ;
+    rdfs:label "RiverSystems" ;
+    ld:belongsToGeneralSubject ld:Geography .
+
+ld:Romanian a ld:Language ;
+    rdfs:label "română" .
+
+ld:Serbian a ld:Language ;
+    rdfs:label "srpski" .
+
+ld:Student007 a ld:Student ;
+    ld:attendsSchool ld:LindenquellIGS ;
+    ld:birthDate "2005-04-18"^^xsd:date ;
+    ld:enrolledIn ld:Course02 ;
+    ld:firstName "Mila" ;
+    ld:hasLanguageProficiency ld:Proficiency007_English,
+        ld:Proficiency007_German ;
+    ld:hasNativeLanguage ld:Persian ;
+    ld:inGrade ld:Grade13 ;
+    ld:surname "Kazemi" .
+
+ld:Student021 a ld:Student ;
+    ld:attendsSchool ld:WaldbrueckenRealschule ;
+    ld:birthDate "2011-08-27"^^xsd:date ;
+    ld:enrolledIn ld:Course04 ;
+    ld:firstName "Meryem" ;
+    ld:hasLanguageProficiency ld:Proficiency021_German,
+        ld:Proficiency021_Polish ;
+    ld:hasNativeLanguage ld:Portuguese ;
+    ld:inGrade ld:Grade9 ;
+    ld:surname "Abadi" .
+
+ld:AcademicVocabulary a ld:SpecificSubject ;
+    rdfs:label "AcademicVocabulary" ;
+    ld:belongsToGeneralSubject ld:GermanLanguage .
+
+ld:ConversationalGerman a ld:SpecificSubject ;
+    rdfs:label "ConversationalGerman" ;
+    ld:belongsToGeneralSubject ld:GermanLanguage .
+
+ld:Geography a ld:GeneralSubject ;
+    rdfs:label "Geography" .
+
+ld:Grammar a ld:SpecificSubject ;
+    rdfs:label "Grammar" ;
+    ld:belongsToGeneralSubject ld:GermanLanguage .
+
+ld:History a ld:GeneralSubject ;
+    rdfs:label "History" .
+
+ld:Persian a ld:Language ;
+    rdfs:label "فارسی" .
+
+ld:Physics a ld:GeneralSubject ;
+    rdfs:label "Physics" .
+
+ld:ReadingComprehension a ld:SpecificSubject ;
+    rdfs:label "ReadingComprehension" ;
+    ld:belongsToGeneralSubject ld:GermanLanguage .
+
+ld:Teacher11 a ld:Teacher ;
+    rdfs:label "Noah Reiter" .
+
+ld:Vietnamese a ld:Language ;
+    rdfs:label "Tiếng Việt" .
+
+ld:WritingSkills a ld:SpecificSubject ;
+    rdfs:label "WritingSkills" ;
+    ld:belongsToGeneralSubject ld:GermanLanguage .
+
+ld:Democracy a ld:SpecificSubject ;
+    rdfs:label "Democracy" ;
+    ld:belongsToGeneralSubject ld:History .
+
+ld:FalkenhofBBS a ld:School ;
+    ld:hasSchoolType ld:VocationalSchool ;
+    ld:schoolName "Berufsbildende Schule Falkenhof" .
+
+ld:GermanLanguage a ld:GeneralSubject ;
+    rdfs:label "German language" .
+
+ld:Biology a ld:GeneralSubject ;
+    rdfs:label "Biology" .
+
+ld:Ecosystems a ld:SpecificSubject ;
+    rdfs:label "Ecosystems" ;
+    ld:belongsToGeneralSubject ld:Biology .
+
+ld:EuropeanIntegration a ld:SpecificSubject ;
+    rdfs:label "EuropeanIntegration" ;
+    ld:belongsToGeneralSubject ld:History .
+
+ld:Industrialization a ld:SpecificSubject ;
+    rdfs:label "Industrialization" ;
+    ld:belongsToGeneralSubject ld:History .
+
+ld:Italian a ld:Language ;
+    rdfs:label "italiano" .
+
+ld:Russian a ld:Language ;
+    rdfs:label "русский" .
+
+ld:WeimarRepublic a ld:SpecificSubject ;
+    rdfs:label "WeimarRepublic" ;
+    ld:belongsToGeneralSubject ld:History .
+
+ld:AcidsAndBases a ld:SpecificSubject ;
+    rdfs:label "AcidsAndBases" ;
+    ld:belongsToGeneralSubject ld:Chemistry .
+
+ld:Arabic a ld:Language ;
+    rdfs:label "العربية" .
+
+ld:CellBiology a ld:SpecificSubject ;
+    rdfs:label "CellBiology" ;
+    ld:belongsToGeneralSubject ld:Biology .
+
+ld:ChemicalReactions a ld:SpecificSubject ;
+    rdfs:label "ChemicalReactions" ;
+    ld:belongsToGeneralSubject ld:Chemistry .
+
+ld:LindenquellIGS a ld:School ;
+    ld:hasSchoolType ld:ComprehensiveSchool ;
+    ld:schoolName "Integrierte Gesamtschule Lindenquell" .
+
+ld:PeriodicTable a ld:SpecificSubject ;
+    rdfs:label "PeriodicTable" ;
+    ld:belongsToGeneralSubject ld:Chemistry .
+
+ld:WaldbrueckenRealschule a ld:School ;
+    ld:hasSchoolType ld:RealschulePlus ;
+    ld:schoolName "Waldbrücken-Realschule plus" .
+
+ld:Genetics a ld:SpecificSubject ;
+    rdfs:label "Genetics" ;
+    ld:belongsToGeneralSubject ld:Biology .
+
+ld:Grade13 a ld:GradeLevel ;
+    ld:gradeNumber 13 .
+
+ld:Grade9 a ld:GradeLevel ;
+    ld:gradeNumber 9 .
+
+ld:NordtalGymnasium a ld:School ;
+    ld:hasSchoolType ld:Gymnasium ;
+    ld:schoolName "Nordtal-Gymnasium" .
+
+ld:Reproduction a ld:SpecificSubject ;
+    rdfs:label "Reproduction" ;
+    ld:belongsToGeneralSubject ld:Biology .
+
+ld:Ukrainian a ld:Language ;
+    rdfs:label "українська" .
+
+ld:ElmbachGymnasium a ld:School ;
+    ld:hasSchoolType ld:Gymnasium ;
+    ld:schoolName "Elmbach-Gymnasium" .
+
+ld:Evolution a ld:SpecificSubject ;
+    rdfs:label "Evolution" ;
+    ld:belongsToGeneralSubject ld:Biology .
+
+ld:Grade12 a ld:GradeLevel ;
+    ld:gradeNumber 12 .
+
+ld:Mathematics a ld:GeneralSubject ;
+    rdfs:label "Mathematics" .
+
+ld:Polish a ld:Language ;
+    rdfs:label "polski" .
+
+ld:SY2025_2026 a ld:SchoolYear ;
+    ld:schoolYearLabel "2025/2026" .
+
+ld:Spanish a ld:Language ;
+    rdfs:label "español" .
+
+ld:SteinwieseBBS a ld:School ;
+    ld:hasSchoolType ld:VocationalSchool ;
+    ld:schoolName "Berufsbildende Schule Steinwiese" .
+
+ld:Teacher12 a ld:Teacher ;
+    rdfs:label "Iris Sommer" .
+
+ld:French a ld:Language ;
+    rdfs:label "français" .
+
+ld:Geometry a ld:SpecificSubject ;
+    rdfs:label "Geometry" ;
+    ld:belongsToGeneralSubject ld:Mathematics .
+
+ld:Grade11 a ld:GradeLevel ;
+    ld:gradeNumber 11 .
+
+ld:Turkish a ld:Language ;
+    rdfs:label "Türkçe" .
+
+ld:English a ld:Language ;
+    rdfs:label "English" .
+
+ld:Grade10 a ld:GradeLevel ;
+    ld:gradeNumber 10 .
+
+ld:CEFR_A1 a ld:CEFRLevel ;
+    rdfs:label "A1" ;
+    ld:cefrRank 1 .
+
+ld:GaussianElimination a ld:SpecificSubject ;
+    rdfs:label "GaussianElimination" ;
+    ld:belongsToGeneralSubject ld:Mathematics .
+
+ld:Probability a ld:SpecificSubject ;
+    rdfs:label "Probability" ;
+    ld:belongsToGeneralSubject ld:Mathematics .
+
+ld:Course07 a ld:StandardCourse ;
+    ld:courseId "C07" ;
+    ld:hasDefaultTeacher ld:Teacher07 ;
+    ld:hasGeneralSubject ld:Physics ;
+    ld:hasSession ld:Session07_01,
+        ld:Session07_02,
+        ld:Session07_03,
+        ld:Session07_04,
+        ld:Session07_05,
+        ld:Session07_06,
+        ld:Session07_07,
+        ld:Session07_08,
+        ld:Session07_09,
+        ld:Session07_10,
+        ld:Session07_11,
+        ld:Session07_12,
+        ld:Session07_13 ;
+    ld:hasStudent ld:Student034,
+        ld:Student035,
+        ld:Student036 ;
+    ld:inSchoolYear ld:SY2025_2026 ;
+    ld:label "Standard course 07" ;
+    ld:requiredGermanRank 3 .
+
+ld:Equations a ld:SpecificSubject ;
+    rdfs:label "Equations" ;
+    ld:belongsToGeneralSubject ld:Mathematics .
+
+ld:Course03 a ld:StandardCourse ;
+    ld:courseId "C03" ;
+    ld:hasDefaultTeacher ld:Teacher03 ;
+    ld:hasGeneralSubject ld:Geography ;
+    ld:hasSession ld:Session03_01,
+        ld:Session03_02,
+        ld:Session03_03,
+        ld:Session03_04,
+        ld:Session03_05,
+        ld:Session03_06,
+        ld:Session03_07,
+        ld:Session03_08,
+        ld:Session03_09,
+        ld:Session03_10,
+        ld:Session03_11,
+        ld:Session03_12,
+        ld:Session03_13,
+        ld:Session03_14 ;
+    ld:hasStudent ld:Student012,
+        ld:Student013,
+        ld:Student014,
+        ld:Student015 ;
+    ld:inSchoolYear ld:SY2025_2026 ;
+    ld:label "Standard course 03" ;
+    ld:requiredGermanRank 3 .
+
+ld:Differentiation a ld:SpecificSubject ;
+    rdfs:label "Differentiation" ;
+    ld:belongsToGeneralSubject ld:Mathematics .
+
+ld:LinearFunctions a ld:SpecificSubject ;
+    rdfs:label "LinearFunctions" ;
+    ld:belongsToGeneralSubject ld:Mathematics .
+
+ld:CEFR_A2 a ld:CEFRLevel ;
+    rdfs:label "A2" ;
+    ld:cefrRank 2 .
+
+ld:CEFR_C1 a ld:CEFRLevel ;
+    rdfs:label "C1" ;
+    ld:cefrRank 5 .
+
+ld:Course09 a ld:PreparatoryCourse ;
+    ld:courseId "C09" ;
+    ld:hasDefaultTeacher ld:Teacher09 ;
+    ld:hasGeneralSubject ld:Mathematics ;
+    ld:hasSession ld:Session09_01,
+        ld:Session09_02,
+        ld:Session09_03,
+        ld:Session09_04,
+        ld:Session09_05,
+        ld:Session09_06,
+        ld:Session09_07,
+        ld:Session09_08,
+        ld:Session09_09,
+        ld:Session09_10,
+        ld:Session09_11,
+        ld:Session09_12,
+        ld:Session09_13,
+        ld:Session09_14,
+        ld:Session09_15,
+        ld:Session09_16,
+        ld:Session09_17,
+        ld:Session09_18 ;
+    ld:hasStudent ld:Student042,
+        ld:Student043,
+        ld:Student044,
+        ld:Student045 ;
+    ld:inSchoolYear ld:SY2025_2026 ;
+    ld:label "Preparatory course 09" ;
+    ld:requiredGermanRank 2 .
+
+ld:CEFR_B2 a ld:CEFRLevel ;
+    rdfs:label "B2" ;
+    ld:cefrRank 4 .
+
+ld:CEFR_B1 a ld:CEFRLevel ;
+    rdfs:label "B1" ;
+    ld:cefrRank 3 .
+
+ld:Course08 a ld:StandardCourse ;
+    ld:courseId "C08" ;
+    ld:hasDefaultTeacher ld:Teacher08 ;
+    ld:hasGeneralSubject ld:Chemistry ;
+    ld:hasSession ld:Session08_01,
+        ld:Session08_02,
+        ld:Session08_03,
+        ld:Session08_04,
+        ld:Session08_05,
+        ld:Session08_06,
+        ld:Session08_07,
+        ld:Session08_08,
+        ld:Session08_09,
+        ld:Session08_10,
+        ld:Session08_11,
+        ld:Session08_12,
+        ld:Session08_13,
+        ld:Session08_14,
+        ld:Session08_15,
+        ld:Session08_16,
+        ld:Session08_17,
+        ld:Session08_18,
+        ld:Session08_19,
+        ld:Session08_20,
+        ld:Session08_21,
+        ld:Session08_22,
+        ld:Session08_23,
+        ld:Session08_24 ;
+    ld:hasStudent ld:Student037,
+        ld:Student038,
+        ld:Student039,
+        ld:Student040,
+        ld:Student041 ;
+    ld:inSchoolYear ld:SY2025_2026 ;
+    ld:label "Standard course 08" ;
+    ld:requiredGermanRank 3 .
+
+ld:Course05 a ld:PreparatoryCourse ;
+    ld:courseId "C05" ;
+    ld:hasDefaultTeacher ld:Teacher05 ;
+    ld:hasGeneralSubject ld:GermanLanguage ;
+    ld:hasSession ld:Session05_01,
+        ld:Session05_02,
+        ld:Session05_03,
+        ld:Session05_04,
+        ld:Session05_05,
+        ld:Session05_06,
+        ld:Session05_07,
+        ld:Session05_08,
+        ld:Session05_09,
+        ld:Session05_10,
+        ld:Session05_11,
+        ld:Session05_12,
+        ld:Session05_13,
+        ld:Session05_14,
+        ld:Session05_15,
+        ld:Session05_16,
+        ld:Session05_17,
+        ld:Session05_18,
+        ld:Session05_19,
+        ld:Session05_20,
+        ld:Session05_21,
+        ld:Session05_22,
+        ld:Session05_23,
+        ld:Session05_24,
+        ld:Session05_25 ;
+    ld:hasStudent ld:Student023,
+        ld:Student024,
+        ld:Student025,
+        ld:Student026,
+        ld:Student027 ;
+    ld:inSchoolYear ld:SY2025_2026 ;
+    ld:label "Preparatory course 05" ;
+    ld:requiredGermanRank 2 .
+
+ld:Course02 a ld:StandardCourse ;
+    ld:courseId "C02" ;
+    ld:hasDefaultTeacher ld:Teacher02 ;
+    ld:hasGeneralSubject ld:Biology ;
+    ld:hasSession ld:Session02_01,
+        ld:Session02_02,
+        ld:Session02_03,
+        ld:Session02_04,
+        ld:Session02_05,
+        ld:Session02_06,
+        ld:Session02_07,
+        ld:Session02_08,
+        ld:Session02_09,
+        ld:Session02_10,
+        ld:Session02_11,
+        ld:Session02_12,
+        ld:Session02_13,
+        ld:Session02_14,
+        ld:Session02_15,
+        ld:Session02_16,
+        ld:Session02_17,
+        ld:Session02_18,
+        ld:Session02_19,
+        ld:Session02_20,
+        ld:Session02_21,
+        ld:Session02_22,
+        ld:Session02_23,
+        ld:Session02_24,
+        ld:Session02_25,
+        ld:Session02_26 ;
+    ld:hasStudent ld:Student007,
+        ld:Student008,
+        ld:Student009,
+        ld:Student010,
+        ld:Student011 ;
+    ld:inSchoolYear ld:SY2025_2026 ;
+    ld:label "Standard course 02" ;
+    ld:requiredGermanRank 3 .
+
+ld:Course06 a ld:StandardCourse ;
+    ld:courseId "C06" ;
+    ld:hasDefaultTeacher ld:Teacher06 ;
+    ld:hasGeneralSubject ld:History ;
+    ld:hasSession ld:Session06_01,
+        ld:Session06_02,
+        ld:Session06_03,
+        ld:Session06_04,
+        ld:Session06_05,
+        ld:Session06_06,
+        ld:Session06_07,
+        ld:Session06_08,
+        ld:Session06_09,
+        ld:Session06_10,
+        ld:Session06_11,
+        ld:Session06_12,
+        ld:Session06_13,
+        ld:Session06_14,
+        ld:Session06_15,
+        ld:Session06_16,
+        ld:Session06_17,
+        ld:Session06_18,
+        ld:Session06_19,
+        ld:Session06_20,
+        ld:Session06_21,
+        ld:Session06_22,
+        ld:Session06_23,
+        ld:Session06_24,
+        ld:Session06_25,
+        ld:Session06_26,
+        ld:Session06_27 ;
+    ld:hasStudent ld:Student028,
+        ld:Student029,
+        ld:Student030,
+        ld:Student031,
+        ld:Student032,
+        ld:Student033 ;
+    ld:inSchoolYear ld:SY2025_2026 ;
+    ld:label "Standard course 06" ;
+    ld:requiredGermanRank 3 .
+
+ld:Course01 a ld:StandardCourse ;
+    ld:courseId "C01" ;
+    ld:hasDefaultTeacher ld:Teacher01 ;
+    ld:hasGeneralSubject ld:Mathematics ;
+    ld:hasSession ld:Session01_01,
+        ld:Session01_02,
+        ld:Session01_03,
+        ld:Session01_04,
+        ld:Session01_05,
+        ld:Session01_06,
+        ld:Session01_07,
+        ld:Session01_08,
+        ld:Session01_09,
+        ld:Session01_10,
+        ld:Session01_11,
+        ld:Session01_12,
+        ld:Session01_13,
+        ld:Session01_14,
+        ld:Session01_15,
+        ld:Session01_16,
+        ld:Session01_17,
+        ld:Session01_18,
+        ld:Session01_19,
+        ld:Session01_20,
+        ld:Session01_21,
+        ld:Session01_22,
+        ld:Session01_23,
+        ld:Session01_24,
+        ld:Session01_25,
+        ld:Session01_26,
+        ld:Session01_27,
+        ld:Session01_28 ;
+    ld:hasStudent ld:Student001,
+        ld:Student002,
+        ld:Student003,
+        ld:Student004,
+        ld:Student005,
+        ld:Student006 ;
+    ld:inSchoolYear ld:SY2025_2026 ;
+    ld:label "Standard course 01" ;
+    ld:requiredGermanRank 3 .
+
+ld:Course10 a ld:StandardCourse ;
+    ld:courseId "C10" ;
+    ld:hasDefaultTeacher ld:Teacher10 ;
+    ld:hasGeneralSubject ld:Biology,
+        ld:Mathematics ;
+    ld:hasSession ld:Session10_01,
+        ld:Session10_02,
+        ld:Session10_03,
+        ld:Session10_04,
+        ld:Session10_05,
+        ld:Session10_06,
+        ld:Session10_07,
+        ld:Session10_08,
+        ld:Session10_09,
+        ld:Session10_10,
+        ld:Session10_11,
+        ld:Session10_12,
+        ld:Session10_13,
+        ld:Session10_14,
+        ld:Session10_15,
+        ld:Session10_16,
+        ld:Session10_17,
+        ld:Session10_18,
+        ld:Session10_19,
+        ld:Session10_20,
+        ld:Session10_21,
+        ld:Session10_22,
+        ld:Session10_23,
+        ld:Session10_24,
+        ld:Session10_25,
+        ld:Session10_26,
+        ld:Session10_27,
+        ld:Session10_28 ;
+    ld:hasStudent ld:Student046,
+        ld:Student047,
+        ld:Student048,
+        ld:Student049,
+        ld:Student050,
+        ld:Student051 ;
+    ld:inSchoolYear ld:SY2025_2026 ;
+    ld:label "Standard course 10" ;
+    ld:requiredGermanRank 3 .
+
+ld:Course04 a ld:StandardCourse ;
+    ld:courseId "C04" ;
+    ld:hasDefaultTeacher ld:Teacher04 ;
+    ld:hasGeneralSubject ld:Mathematics ;
+    ld:hasSession ld:Session04_01,
+        ld:Session04_02,
+        ld:Session04_03,
+        ld:Session04_04,
+        ld:Session04_05,
+        ld:Session04_06,
+        ld:Session04_07,
+        ld:Session04_08,
+        ld:Session04_09,
+        ld:Session04_10,
+        ld:Session04_11,
+        ld:Session04_12,
+        ld:Session04_13,
+        ld:Session04_14,
+        ld:Session04_15,
+        ld:Session04_16,
+        ld:Session04_17,
+        ld:Session04_18,
+        ld:Session04_19,
+        ld:Session04_20,
+        ld:Session04_21,
+        ld:Session04_22,
+        ld:Session04_23,
+        ld:Session04_24,
+        ld:Session04_25,
+        ld:Session04_26,
+        ld:Session04_27,
+        ld:Session04_28,
+        ld:Session04_29 ;
+    ld:hasStudent ld:Student016,
+        ld:Student017,
+        ld:Student018,
+        ld:Student019,
+        ld:Student020,
+        ld:Student021,
+        ld:Student022 ;
+    ld:inSchoolYear ld:SY2025_2026 ;
+    ld:label "Standard course 04" ;
+    ld:requiredGermanRank 3 .
+
+ld:German a ld:Language ;
+    rdfs:label "Deutsch" .
+

@@ -1,0 +1,177 @@
+@prefix ld: <http://www.uni-koblenz.de/ontologies/langde#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ld:CourseShape a sh:NodeShape ;
+    sh:property [ sh:class ld:Teacher ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:hasDefaultTeacher ],
+        [ sh:class ld:GeneralSubject ;
+            sh:minCount 1 ;
+            sh:path ld:hasGeneralSubject ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:label ],
+        [ sh:datatype xsd:integer ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:requiredGermanRank ],
+        [ sh:class ld:Student ;
+            sh:maxCount 7 ;
+            sh:minCount 3 ;
+            sh:path ld:hasStudent ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:courseId ],
+        [ sh:class ld:SchoolYear ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:inSchoolYear ] ;
+    sh:sparql [ sh:message "Course student must have exactly one German CEFR record." ;
+            sh:select """PREFIX ld: <http://www.uni-koblenz.de/ontologies/langde#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT $this ?student WHERE {
+  $this ld:hasStudent ?student .
+  FILTER (
+    NOT EXISTS {
+      ?student ld:hasLanguageProficiency ?p .
+      ?p ld:proficiencyLanguage ld:German .
+    }
+    ||
+    EXISTS {
+      ?student ld:hasLanguageProficiency ?p1, ?p2 .
+      ?p1 ld:proficiencyLanguage ld:German .
+      ?p2 ld:proficiencyLanguage ld:German .
+      FILTER (?p1 != ?p2)
+    }
+  )
+}""" ],
+        [ sh:message "Student German CEFR rank is lower than the course admission threshold." ;
+            sh:select """PREFIX ld: <http://www.uni-koblenz.de/ontologies/langde#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT $this ?student WHERE { $this ld:hasStudent ?student ; ld:requiredGermanRank ?required . ?student ld:hasLanguageProficiency ?p . ?p ld:proficiencyLanguage ld:German ; ld:proficiencyLevel/ld:cefrRank ?rank . FILTER (?rank < ?required) }""" ] ;
+    sh:targetClass ld:Course,
+        ld:PreparatoryCourse,
+        ld:StandardCourse .
+
+ld:ProficiencyShape a sh:NodeShape ;
+    sh:property [ sh:class ld:Language ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:proficiencyLanguage ],
+        [ sh:class ld:CEFRLevel ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:proficiencyLevel ] ;
+    sh:targetClass ld:LanguageProficiency .
+
+ld:SchoolShape a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:schoolName ],
+        [ sh:class ld:SchoolType ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:hasSchoolType ] ;
+    sh:targetClass ld:School .
+
+ld:SessionShape a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:endDateTime ],
+        [ sh:class ld:SpecificSubject ;
+            sh:minCount 1 ;
+            sh:path ld:hasSpecificSubject ],
+        [ sh:class ld:Course ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:sessionOf ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:startDateTime ],
+        [ sh:class ld:Student ;
+            sh:minCount 0 ;
+            sh:path ld:absentStudent ],
+        [ sh:class ld:Teacher ;
+            sh:maxCount 1 ;
+            sh:minCount 0 ;
+            sh:path ld:hasSubstituteTeacher ] ;
+    sh:sparql [ sh:message "Session topic must be covered by one of the course general subjects." ;
+            sh:select """PREFIX ld: <http://www.uni-koblenz.de/ontologies/langde#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT $this ?topic WHERE { $this ld:sessionOf ?course ; ld:hasSpecificSubject ?topic . FILTER NOT EXISTS { ?topic ld:belongsToGeneralSubject ?general . ?course ld:hasGeneralSubject ?general } }""" ],
+        [ sh:message "Session date must fall outside encoded school holidays." ;
+            sh:select """PREFIX ld: <http://www.uni-koblenz.de/ontologies/langde#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT $this ?holiday WHERE { $this ld:startDateTime ?start . ?holiday a ld:SchoolHolidayPeriod ; ld:periodStart ?a ; ld:periodEnd ?b . FILTER (SUBSTR(STR(?start),1,10) >= STR(?a) && SUBSTR(STR(?start),1,10) <= STR(?b)) }""" ],
+        [ sh:message "Absent student must be enrolled in the session course." ;
+            sh:select """PREFIX ld: <http://www.uni-koblenz.de/ontologies/langde#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT $this ?student WHERE { $this ld:absentStudent ?student ; ld:sessionOf ?course . FILTER NOT EXISTS { ?course ld:hasStudent ?student } }""" ],
+        [ sh:message "Substitute teacher cannot be the default course teacher." ;
+            sh:select """PREFIX ld: <http://www.uni-koblenz.de/ontologies/langde#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT $this ?sub WHERE { $this ld:hasSubstituteTeacher ?sub ; ld:sessionOf/ld:hasDefaultTeacher ?sub . }""" ],
+        [ sh:message "Session must start before it ends." ;
+            sh:select """PREFIX ld: <http://www.uni-koblenz.de/ontologies/langde#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT $this WHERE { $this ld:startDateTime ?start ; ld:endDateTime ?end . FILTER (?start >= ?end) }""" ] ;
+    sh:targetClass ld:CourseSession .
+
+ld:SpecificSubjectShape a sh:NodeShape ;
+    sh:property [ sh:class ld:GeneralSubject ;
+            sh:minCount 1 ;
+            sh:path ld:belongsToGeneralSubject ] ;
+    sh:targetClass ld:SpecificSubject .
+
+ld:StudentShape a sh:NodeShape ;
+    sh:property [ sh:class ld:School ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:attendsSchool ],
+        [ sh:class ld:Course ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:enrolledIn ],
+        [ sh:class ld:Language ;
+            sh:minCount 1 ;
+            sh:path ld:hasNativeLanguage ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:surname ],
+        [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:firstName ],
+        [ sh:class ld:GradeLevel ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:inGrade ],
+        [ sh:datatype xsd:date ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ld:birthDate ],
+        [ sh:class ld:LanguageProficiency ;
+            sh:minCount 1 ;
+            sh:path ld:hasLanguageProficiency ] ;
+    sh:sparql [ sh:message "Student must be between 11 and 21 years old at school-year start (2025-08-18)." ;
+            sh:select """PREFIX ld: <http://www.uni-koblenz.de/ontologies/langde#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT $this WHERE { $this ld:birthDate ?dob . BIND((2025 - YEAR(?dob) - IF(MONTH(?dob) > 8 || (MONTH(?dob) = 8 && DAY(?dob) > 18), 1, 0)) AS ?age) FILTER (?age < 11 || ?age > 21) }""" ],
+        [ sh:message "German must not be a student native language." ;
+            sh:select """PREFIX ld: <http://www.uni-koblenz.de/ontologies/langde#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT $this WHERE { $this ld:hasNativeLanguage ld:German . }""" ],
+        [ sh:message "Student must be linked to the same course in both directions." ;
+            sh:select """PREFIX ld: <http://www.uni-koblenz.de/ontologies/langde#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT $this ?course WHERE { $this ld:enrolledIn ?course . FILTER NOT EXISTS { ?course ld:hasStudent $this } }""" ] ;
+    sh:targetClass ld:Student .
+
